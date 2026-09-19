@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>隱私權政策｜落墨成勢</title>
+<style>
+  :root{
+    --ink:#231f1b; --sub:#6e6558; --line:#d9d0bd; --paper:#f6f0e3; --zhu:#9d2d20;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --ink:#e6dfd2; --sub:#9a9184; --line:#3c352d; --paper:#1c1916; --zhu:#c2543f; }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; padding:0 20px 80px;
+    background:var(--paper); color:var(--ink);
+    font-family:"Noto Serif TC","Songti TC",Georgia,"Times New Roman",serif;
+    line-height:1.85; font-size:17px;
+  }
+  main{max-width:46rem; margin:0 auto}
+  header{padding:64px 0 28px; border-bottom:1px solid var(--line); margin-bottom:36px}
+  h1{font-size:2rem; letter-spacing:.16em; margin:0 0 .4em; font-weight:600}
+  .lede{color:var(--sub); margin:0; font-size:1rem}
+  h2{font-size:1.25rem; letter-spacing:.1em; margin:2.6em 0 .6em; font-weight:600}
+  h2::before{content:"—— "; color:var(--zhu)}
+  h3{font-size:1.02rem; margin:1.8em 0 .4em; font-weight:600}
+  p,li{color:var(--ink)}
+  ul{padding-left:1.3em}
+  li{margin:.4em 0}
+  a{color:var(--zhu)}
+  table{width:100%; border-collapse:collapse; margin:1em 0; font-size:.95rem}
+  th,td{border:1px solid var(--line); padding:.6em .8em; text-align:left; vertical-align:top}
+  th{background:rgba(157,45,32,.07); font-weight:600}
+  .note{border-left:3px solid var(--zhu); padding:.2em 0 .2em 1em; margin:1.4em 0; color:var(--sub)}
+  .todo{background:rgba(157,45,32,.1); border:1px dashed var(--zhu); padding:1em 1.2em; margin:1.6em 0; border-radius:4px}
+  .todo strong{color:var(--zhu)}
+  footer{margin-top:4em; padding-top:1.4em; border-top:1px solid var(--line); color:var(--sub); font-size:.9rem}
+  code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:.9em; background:rgba(0,0,0,.05); padding:.1em .35em; border-radius:3px}
+  @media (prefers-color-scheme: dark){ code{background:rgba(255,255,255,.07)} }
+</style>
+</head>
+<body>
+<main>
+
+<header>
+  <h1>隱私權政策</h1>
+  <p class="lede">《落墨成勢》（Android／iOS）　最後更新：2026 年 9 月 19 日</p>
+</header>
+
+<div class="todo">
+  <strong>上架前要補的一處</strong>：商店連結（本遊戲尚未上架）。
+  其餘內容是照 App 實際行為寫的，不是樣板 —— 包含聯機時會用到的中繼與 STUN 服務。
+</div>
+
+<h2>總則</h2>
+<p>
+《落墨成勢》（以下稱「本遊戲」）由 <strong>FireCat Studio</strong>（個人開發者，以下稱「我們」）開發。
+本政策說明本遊戲會接觸到哪些資料、為什麼、以及交給了誰。
+</p>
+<p>
+<strong>我們沒有帳號系統，也沒有為玩家建立任何個人檔案。</strong>
+你的對局紀錄、練習紀錄、設定與匯出的圖片都只存在你自己的裝置上，我們讀不到。
+</p>
+
+<h2>一、存在你裝置上的資料</h2>
+<p>以下資料只寫在本機，不會上傳：</p>
+<ul>
+  <li><strong>對局與練習紀錄</strong>：日期、模式、比分、重疊率、以及該局的縮圖</li>
+  <li><strong>設定</strong>：暱稱、音量、語言、節能模式、換手提示</li>
+  <li><strong>匯出的圖片</strong>：你按下「存到相簿」時產生的 PNG</li>
+</ul>
+<p>解除安裝本遊戲即會一併刪除這些資料（已存進相簿的圖片除外，那由你的相簿管理）。</p>
+
+<h2>二、聯機對局</h2>
+<p>只有在你使用「聯機雙人」時才會發生下列事情。單機模式完全不連網。</p>
+
+<h3>2.1 暱稱</h3>
+<p>
+你在設定頁填的暱稱會傳給對手，並顯示在他的畫面上。
+留空的話會顯示為「棋友」。<strong>請不要在暱稱裡填真實姓名或其他你不想讓陌生人看到的資訊。</strong>
+</p>
+
+<h3>2.2 配對用的中繼伺服器</h3>
+<p>
+為了讓兩台裝置能直接連線，配對資訊（房號、連線描述、你的暱稱）會暫存在
+我們自架的 Cloudflare Worker 上。
+</p>
+<table>
+  <tr><th>存什麼</th><td>房號、WebRTC 連線描述（含網路位址候選）、暱稱</td></tr>
+  <tr><th>存多久</th><td><strong>十分鐘</strong>。逾時或對局建立後即自動刪除</td></tr>
+  <tr><th>用途</th><td>僅用於把兩位玩家接上。不做分析、不做側寫</td></tr>
+</table>
+<p>對局開始後，棋步資料由兩台裝置<strong>直接</strong>往來，不經過我們的伺服器。</p>
+
+<h3>2.3 STUN 服務</h3>
+<p>
+建立直連需要知道彼此在網際網路上的位址，這一步使用下列第三方 STUN 服務，
+它們會看到你的 IP 位址：
+</p>
+<ul>
+  <li>Cloudflare（<code>stun.cloudflare.com</code>）</li>
+  <li>Google（<code>stun.l.google.com</code>）</li>
+</ul>
+
+<h2>三、廣告</h2>
+<p>
+本遊戲使用 Google AdMob 顯示廣告，用來支應開發成本。廣告出現在三個地方：
+開啟遊戲時一次、每數場對局之間一次、以及你自己按下「贊助作者」時。
+</p>
+
+<div class="note">
+  <strong>廣告不會影響對局。</strong>本遊戲的勝負判定是確定性的，
+  看廣告換不到任何步數、道具或優勢。「贊助作者」的回報只是一枚落款印記。
+</div>
+
+<p>
+Google 可能會蒐集並使用<strong>廣告識別碼</strong>與相關資訊來提供及衡量廣告。
+其做法請見 <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google 的合作夥伴政策</a>。
+</p>
+
+<h3>3.1 你的選擇</h3>
+<p>
+如果你位於歐洲經濟區、英國或瑞士，本遊戲會在首次啟動時透過 Google 的
+User Messaging Platform 詢問你的同意。
+<strong>你隨時可以在「設定 → 隱私選項」裡改變決定。</strong>
+</p>
+<p>
+你也可以在裝置的系統設定中重設或刪除廣告識別碼
+（Android：設定 → Google → 廣告；iOS：設定 → 隱私權與安全性 → 追蹤）。
+</p>
+
+<h2>四、我們不做的事</h2>
+<ul>
+  <li>不蒐集姓名、電子郵件、電話、通訊錄或位置資訊</li>
+  <li>不使用分析或追蹤 SDK（廣告所需者除外，見第三節）</li>
+  <li>不販售個人資料</li>
+  <li>不在伺服器上保存你的對局內容</li>
+</ul>
+
+<h2>五、兒童</h2>
+<p>
+本遊戲並非以未滿 13 歲之兒童為對象，我們也不會刻意蒐集兒童的個人資料。
+若你是家長並認為孩子提供了相關資訊，請與我們聯絡，我們會處理。
+</p>
+
+<h2>六、你的權利</h2>
+<p>
+由於我們不保存可識別你的資料，通常無須向我們提出查詢或刪除請求 ——
+刪除本機資料只要解除安裝本遊戲即可。
+關於 Google 持有之廣告相關資料，請透過上方 Google 的政策連結行使權利。
+</p>
+
+<h2>七、變更</h2>
+<p>本政策如有變更，會更新本頁頂端的日期。重大變更會在遊戲內另行告知。</p>
+
+<h2>八、聯絡我們</h2>
+<p>
+有任何疑問請來信：<a href="mailto:carter870808@gmail.com">carter870808@gmail.com</a>
+</p>
+
+<footer>
+  《落墨成勢》　FireCat Studio　·　本頁亦為 Google AdMob 與
+  Google Play 資料安全表單所指之隱私權政策網址。
+</footer>
+
+</main>
+</body>
+</html>
