@@ -1,15 +1,43 @@
-# 隱私權政策 — 《落墨成勢》
+# Privacy Policy — Ink Builds Worlds
 
-這個 repo 只放一個檔：`index.html`，透過 GitHub Pages 對外。
+**《落墨成勢》隱私權政策**
 
-網址會是 `https://<帳號>.github.io/inkgame-privacy/`，用在三個地方：
+Published at <https://carterchou.github.io/inkgame/>
 
-- AdMob → 應用程式設定 → 隱私權政策網址
-- AdMob → 隱私權與訊息 → 歐洲法規（同意訊息裡必填）
-- Google Play 商店資訊 → 隱私權政策
+---
 
-## ⚠ 這份是副本
+## About
 
-**來源是遊戲專案裡的 `Docs/privacy/index.html`。**
-要改內容請改那一份，再複製過來 push —— 直接改這裡的話兩邊會分岔，
-而分岔的隱私政策是實際的法律風險（商店上寫的跟 App 實際行為對不上）。
+Ink Builds Worlds (《落墨成勢》) is a two-player territory game played with
+ink on xuan paper, for Android and iOS. This repository hosts its privacy
+policy as a static page.
+
+《落墨成勢》是一款在宣紙上以水墨爭地的雙人對弈遊戲，支援 Android 與 iOS。
+本 repository 存放其隱私權政策。
+
+## Contents
+
+| File | Description |
+| --- | --- |
+| `index.html` | The privacy policy (Traditional Chinese) |
+
+## Where this page is referenced
+
+- Google AdMob — app settings, privacy policy URL
+- Google AdMob — European regulations (GDPR) consent message
+- Google Play — store listing, privacy policy
+
+## Contact
+
+Questions about this policy: <carter870808@gmail.com>
+
+## Maintenance
+
+The canonical copy of this document is kept with the game's source. Updates
+are made there and mirrored here, so please do not edit this copy in place —
+a divergence between the two would mean the published policy no longer
+describes what the application actually does.
+
+---
+
+© FireCat Studio
