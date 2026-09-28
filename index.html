@@ -58,7 +58,7 @@
   <h1>隱私權政策
     <small>《落墨成勢》　Ink Builds Worlds</small>
   </h1>
-  <p class="meta">生效日：2026 年 9 月 19 日　·　版本 1.0</p>
+  <p class="meta">生效日：2026 年 9 月 28 日　·　版本 1.1　·　最後更新：2026 年 9 月 28 日</p>
 </header>
 
 <nav><a href="#en">English version below ↓</a></nav>
@@ -68,7 +68,8 @@
   <ul>
     <li>本遊戲<strong>沒有帳號系統</strong>，我們不會為您建立個人檔案。</li>
     <li>對局紀錄、設定與匯出的圖片<strong>只存放在您的裝置上</strong>。</li>
-    <li>單機模式<strong>完全不連網</strong>。</li>
+    <li>單機模式的對局<strong>本身不連網</strong>（廣告載入除外）。</li>
+    <li>「移除廣告」由 Google Play／App Store 處理付款，<strong>我們拿不到任何付款資訊</strong>。</li>
     <li>使用聯機對局時，配對資訊會短暫經過我們的伺服器（十分鐘後刪除），
         且第三方 STUN 服務會取得您的 IP 位址。</li>
     <li>本遊戲顯示 Google AdMob 廣告。<strong>廣告不影響對局結果。</strong></li>
@@ -96,6 +97,8 @@ Android 與 iOS 版本。
   <tr><th>類別</th><th>內容</th></tr>
   <tr><td>對局與練習紀錄</td><td>日期時間、遊戲模式、比分、重疊率、該局盤面縮圖</td></tr>
   <tr><td>應用程式設定</td><td>顯示名稱、音量、語言、節能模式、輔助提示開關</td></tr>
+  <tr><td>收藏與戰績統計</td><td>各模式的對局與勝場數、已解鎖的背景／頭像／插圖、您選用的頭像與大廳背景</td></tr>
+  <tr><td>購買狀態</td><td>是否已購買「移除廣告」（僅為本機快取，以商店紀錄為準）</td></tr>
   <tr><td>匯出圖片</td><td>由您主動選擇「存到相簿」時產生之 PNG 檔</td></tr>
 </table>
 <p>
@@ -106,17 +109,18 @@ Android 與 iOS 版本。
 <h3>2.2　聯機對局</h3>
 <p>下列處理<strong>僅於您主動使用「聯機雙人」功能時發生</strong>。</p>
 
-<p><strong>（a）顯示名稱</strong><br>
-您於設定頁輸入之名稱將傳送予對手並顯示於其畫面。未填寫時顯示為預設名稱。
+<p><strong>（a）顯示名稱、頭像與貼圖</strong><br>
+您於設定頁輸入之名稱，以及您選用之頭像（遊戲內建圖案之編號），將傳送予對手並顯示於其畫面；
+對局中您點選之貼圖（同為遊戲內建圖案）亦會傳送予對手。未填寫名稱時顯示為預設名稱。
 本遊戲不驗證此名稱，亦不將其與任何身分資訊連結。
 <strong>請避免填入真實姓名或其他您不願為不特定人知悉之資訊。</strong></p>
 
 <p><strong>（b）配對中繼</strong><br>
 為使兩台裝置建立直接連線，下列資訊會暫存於我們自行部署之 Cloudflare Workers
-服務：房間代碼、WebRTC 連線描述（其中包含網路位址候選）、顯示名稱。</p>
+服務：房間代碼、WebRTC 連線描述（其中包含網路位址候選）、顯示名稱、頭像編號。</p>
 <table>
   <tr><th>用途</th><td>僅用於協助兩位玩家建立連線</td></tr>
-  <tr><td>保存期間</td><td><strong>十分鐘</strong>，或於連線建立後即刻刪除，以較早者為準</td></tr>
+  <tr><td>保存期間</td><td>建立房間後<strong>十分鐘</strong>自動刪除</td></tr>
   <tr><td>後續利用</td><td>無。不進行分析、剖析或任何形式之再利用</td></tr>
 </table>
 <p>連線建立後，對局資料由兩台裝置直接往來，不經過我們的伺服器。</p>
@@ -145,7 +149,19 @@ Google 可能蒐集並使用<strong>廣告識別碼</strong>及相關資訊，�
 觀看廣告不會取得任何步數、道具或對局優勢；「贊助作者」之回饋僅為一枚紀念性落款印記。
 </p>
 
-<h3>2.4　我們不處理的資料</h3>
+<h3>2.4　購買「移除廣告」</h3>
+<p>
+本遊戲提供一次性購買「移除廣告」（非消耗性商品，無訂閱）。付款全程由
+Google Play（Android）或 Apple App Store（iOS）處理；我們<strong>不會取得</strong>您的姓名、
+付款方式或卡號，僅會從商店得知「此商店帳號是否擁有此商品」，並據以關閉非自願廣告。
+</p>
+<p>
+購買狀態以商店紀錄為準：換機或重新安裝後，可於「設定 → 恢復購買」找回；
+若該筆購買經商店退款，移除廣告之效果將隨之取消。
+退款與付款爭議請依各商店之規定向 Google Play 或 Apple 提出。
+</p>
+
+<h3>2.5　我們不處理的資料</h3>
 <ul>
   <li>不蒐集姓名、電子郵件、電話號碼、通訊錄或精確位置資訊</li>
   <li>不使用分析或使用者追蹤 SDK（第 2.3 節所述廣告所必需者除外）</li>
@@ -180,14 +196,15 @@ Google 可能蒐集並使用<strong>廣告識別碼</strong>及相關資訊，�
   <tr><th>接收者</th><th>所涉資料</th><th>角色</th></tr>
   <tr><td>Google LLC（AdMob、UMP、STUN）</td><td>廣告識別碼、同意狀態、IP 位址</td><td>獨立控制者／處理者</td></tr>
   <tr><td>Cloudflare, Inc.（Workers、STUN）</td><td>配對資訊、IP 位址</td><td>處理者／獨立控制者</td></tr>
-  <tr><td>您的對手</td><td>顯示名稱、連線所需之網路位址</td><td>直接連線之相對人</td></tr>
+  <tr><td>Google LLC（Google Play 結帳）／Apple Inc.（App Store）</td><td>購買紀錄</td><td>獨立控制者</td></tr>
+  <tr><td>您的對手</td><td>顯示名稱、頭像編號、貼圖、連線所需之網路位址</td><td>直接連線之相對人</td></tr>
 </table>
 <p>除上述者外，我們不將您的資料揭露予任何第三方，法律或主管機關依法要求者除外。</p>
 
 <h2>五、保存期間</h2>
 <table>
   <tr><td>裝置上之資料</td><td>保留至您刪除紀錄或解除安裝本遊戲為止</td></tr>
-  <tr><td>配對中繼資料</td><td>十分鐘，或連線建立後即刻刪除</td></tr>
+  <tr><td>配對中繼資料</td><td>建立房間後十分鐘自動刪除</td></tr>
   <tr><td>廣告相關資料</td><td>依 Google 之保存政策辦理，本遊戲無法存取</td></tr>
 </table>
 
@@ -241,7 +258,7 @@ Google 與 Cloudflare 於全球營運，前述資料可能被傳輸至您所在�
   <h1>Privacy Policy
     <small>Ink Builds Worlds（《落墨成勢》）</small>
   </h1>
-  <p class="meta">Effective 19 September 2026　·　Version 1.0</p>
+  <p class="meta">Effective 28 September 2026　·　Version 1.1　·　Last updated 28 September 2026</p>
 </header>
 
 <div class="summary">
@@ -249,7 +266,8 @@ Google 與 Cloudflare 於全球營運，前述資料可能被傳輸至您所在�
   <ul>
     <li>The game has <strong>no accounts</strong>. We do not build a profile of you.</li>
     <li>Match records, settings and exported images are <strong>stored only on your device</strong>.</li>
-    <li>Single-player modes <strong>make no network connections at all</strong>.</li>
+    <li>Single-player matches <strong>need no network connection</strong> (apart from loading ads).</li>
+    <li>“Remove Ads” is paid through Google Play / the App Store; <strong>we never receive your payment details</strong>.</li>
     <li>Online play briefly passes matchmaking data through our server (deleted after ten
         minutes), and third-party STUN services receive your IP address.</li>
     <li>The game shows Google AdMob advertising. <strong>Ads have no effect on play.</strong></li>
@@ -277,6 +295,8 @@ Ink Builds Worlds (《落墨成勢》, “the game”).
   <tr><th>Category</th><th>Contents</th></tr>
   <tr><td>Match and practice records</td><td>Date and time, game mode, scores, overlap ratio, a thumbnail of the board</td></tr>
   <tr><td>Application settings</td><td>Display name, volume, language, power-saving mode, assistance toggles</td></tr>
+  <tr><td>Collection and statistics</td><td>Matches played and won per mode, unlocked backdrops / avatars / illustrations, the avatar and lobby backdrop you chose</td></tr>
+  <tr><td>Purchase status</td><td>Whether “Remove Ads” has been bought (a local cache only; the store's record is authoritative)</td></tr>
   <tr><td>Exported images</td><td>PNG files created when you choose to save a board to your photo library</td></tr>
 </table>
 <p>
@@ -287,19 +307,20 @@ library are not affected and remain under your control.
 <h3>2.2　Online play</h3>
 <p>The following occurs <strong>only when you actively use the online multiplayer feature</strong>.</p>
 
-<p><strong>(a) Display name</strong><br>
-The name you enter in settings is sent to your opponent and shown on their screen. If left
-blank, a default name is shown. We do not verify this name or link it to any identity.
+<p><strong>(a) Display name, avatar and stickers</strong><br>
+The name you enter in settings and the avatar you choose (the number of a built-in picture) are
+sent to your opponent and shown on their screen; stickers you tap during a match (also built-in
+pictures) are sent to your opponent as well. If the name is left blank, a default name is shown. We do not verify this name or link it to any identity.
 <strong>Please avoid entering your real name or anything you would not wish an unknown
 person to see.</strong></p>
 
 <p><strong>(b) Matchmaking relay</strong><br>
 To allow two devices to connect directly, the following is temporarily stored on a Cloudflare
 Workers service operated by us: the room code, the WebRTC session description (which includes
-network address candidates), and the display name.</p>
+network address candidates), the display name and the avatar number.</p>
 <table>
   <tr><th>Purpose</th><td>Solely to connect two players</td></tr>
-  <tr><td>Retention</td><td><strong>Ten minutes</strong>, or immediately upon the connection being established, whichever is earlier</td></tr>
+  <tr><td>Retention</td><td>Deleted automatically <strong>ten minutes</strong> after the room is created</td></tr>
   <tr><td>Further use</td><td>None. No analysis, profiling or any secondary use</td></tr>
 </table>
 <p>Once connected, match data passes directly between the two devices and does not traverse our servers.</p>
@@ -330,7 +351,20 @@ deterministic simulation; watching an advertisement grants no moves, items or ad
 kind. The reward for “Support the Author” is a commemorative seal only.
 </p>
 
-<h3>2.4　What we do not process</h3>
+<h3>2.4　Buying “Remove Ads”</h3>
+<p>
+The game offers a single one-time purchase, “Remove Ads” (a non-consumable item; no
+subscriptions). Payment is handled entirely by Google Play (Android) or the Apple App Store (iOS).
+We <strong>do not receive</strong> your name, payment method or card number; we only learn from
+the store whether this store account owns the item, and switch off non-voluntary ads accordingly.
+</p>
+<p>
+The store's record is authoritative: after changing devices or reinstalling, use
+Settings → Restore Purchases; if the purchase is refunded by the store, ads return.
+Refunds and payment disputes are handled by Google Play or Apple under their own terms.
+</p>
+
+<h3>2.5　What we do not process</h3>
 <ul>
   <li>We do not collect names, email addresses, telephone numbers, contacts or precise location</li>
   <li>We use no analytics or user-tracking SDK, other than what the advertising in §2.3 requires</li>
@@ -365,14 +399,15 @@ kind. The reward for “Support the Author” is a commemorative seal only.
   <tr><th>Recipient</th><th>Data involved</th><th>Role</th></tr>
   <tr><td>Google LLC (AdMob, UMP, STUN)</td><td>Advertising identifier, consent state, IP address</td><td>Independent controller / processor</td></tr>
   <tr><td>Cloudflare, Inc. (Workers, STUN)</td><td>Matchmaking data, IP address</td><td>Processor / independent controller</td></tr>
-  <tr><td>Your opponent</td><td>Display name, network addresses needed to connect</td><td>The other party to a direct connection</td></tr>
+  <tr><td>Google LLC (Google Play billing) / Apple Inc. (App Store)</td><td>Purchase record</td><td>Independent controller</td></tr>
+  <tr><td>Your opponent</td><td>Display name, avatar number, stickers, network addresses needed to connect</td><td>The other party to a direct connection</td></tr>
 </table>
 <p>We disclose your data to no one else, except where required by law or a competent authority.</p>
 
 <h2>5. Retention</h2>
 <table>
   <tr><td>Data on your device</td><td>Until you delete the records or uninstall the game</td></tr>
-  <tr><td>Matchmaking data</td><td>Ten minutes, or immediately once the connection is established</td></tr>
+  <tr><td>Matchmaking data</td><td>Deleted automatically ten minutes after the room is created</td></tr>
   <tr><td>Advertising data</td><td>Per Google's own retention policy; we have no access to it</td></tr>
 </table>
 
