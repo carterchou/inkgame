@@ -1,4 +1,4 @@
-# Privacy Policy — Ink Builds Worlds
+# Privacy Policy — Inkroach
 
 **《落墨成勢》隱私權政策**
 
@@ -8,7 +8,7 @@ Published at <https://carterchou.github.io/inkgame/>
 
 ## About
 
-Ink Builds Worlds (《落墨成勢》) is a two-player territory game played with
+Inkroach (《落墨成勢》) is a two-player territory game played with
 ink on xuan paper, for Android and iOS. This repository hosts its privacy
 policy as a static page.
 
