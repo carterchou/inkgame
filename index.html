@@ -1,467 +1,616 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>隱私權政策｜落墨成勢　Privacy Policy｜Ink Builds Worlds</title>
+<title>Privacy Policy | Ink Builds Worlds</title>
 <style>
-  :root{
-    --ink:#231f1b; --sub:#6e6558; --line:#d9d0bd; --paper:#f6f0e3;
-    --zhu:#9d2d20; --box:#efe8d8;
-  }
+  :root{ --ink:#231f1b; --sub:#6e6558; --line:#d9d0bd; --paper:#f6f0e3; --zhu:#9d2d20; --box:#efe8d8; }
   @media (prefers-color-scheme: dark){
-    :root{ --ink:#e6dfd2; --sub:#9a9184; --line:#3c352d; --paper:#1c1916;
-           --zhu:#c2543f; --box:#252119; }
+    :root{ --ink:#e6dfd2; --sub:#9a9184; --line:#3c352d; --paper:#1c1916; --zhu:#c2543f; --box:#252119; }
   }
   *{box-sizing:border-box}
-  body{
-    margin:0; padding:0 20px 96px; background:var(--paper); color:var(--ink);
-    font-family:"Noto Serif TC","Songti TC",Georgia,"Times New Roman",serif;
-    line-height:1.85; font-size:17px;
-  }
+  body{ margin:0; padding:0 20px 96px; background:var(--paper); color:var(--ink);
+        font-family:Georgia,"Times New Roman","Noto Serif TC","Songti TC",serif; line-height:1.8; font-size:17px; }
+  :lang(zh-Hant){ font-family:"Noto Serif TC","Songti TC",serif }
+  :lang(zh-Hans){ font-family:"Noto Serif SC","Songti SC",serif }
+  :lang(ja){ font-family:"Noto Serif JP","Hiragino Mincho ProN","Yu Mincho",serif }
+  :lang(ko){ font-family:"Noto Serif KR","AppleMyungjo",serif }
   main{max-width:46rem; margin:0 auto}
-  header{padding:64px 0 24px; border-bottom:1px solid var(--line); margin-bottom:8px}
-  h1{font-size:1.9rem; letter-spacing:.14em; margin:0 0 .35em; font-weight:600}
-  h1 small{display:block; font-size:.95rem; letter-spacing:.06em; color:var(--sub);
-           font-weight:400; margin-top:.5em}
-  .meta{color:var(--sub); margin:0; font-size:.92rem}
-  nav{margin:22px 0 40px; font-size:.95rem}
-  nav a{color:var(--zhu); text-decoration:none; border-bottom:1px solid transparent}
-  nav a:hover{border-bottom-color:var(--zhu)}
-  h2{font-size:1.2rem; letter-spacing:.08em; margin:2.6em 0 .5em; font-weight:600;
-     padding-top:.6em; border-top:1px solid var(--line)}
-  h3{font-size:1rem; margin:1.7em 0 .35em; font-weight:600}
-  p,li{color:var(--ink)}
-  ul,ol{padding-left:1.35em}
-  li{margin:.35em 0}
-  a{color:var(--zhu)}
-  table{width:100%; border-collapse:collapse; margin:1.1em 0; font-size:.94rem}
-  th,td{border:1px solid var(--line); padding:.6em .8em; text-align:left; vertical-align:top}
-  th{background:rgba(157,45,32,.07); font-weight:600}
-  .summary{background:var(--box); border:1px solid var(--line); border-radius:4px;
-           padding:1.1em 1.3em; margin:1.8em 0}
-  .summary h3{margin-top:0}
-  .summary ul{margin-bottom:0}
-  code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:.9em;
-       background:rgba(0,0,0,.05); padding:.1em .35em; border-radius:3px}
-  @media (prefers-color-scheme: dark){ code{background:rgba(255,255,255,.07)} }
-  .sep{margin:5em 0 0; padding-top:3em; border-top:3px double var(--line)}
-  footer{margin-top:4em; padding-top:1.4em; border-top:1px solid var(--line);
-         color:var(--sub); font-size:.9rem}
-  @media (max-width:520px){ body{font-size:16px} h1{font-size:1.5rem} }
+  nav.langs{ display:flex; flex-wrap:wrap; gap:.3em 1em; padding:22px 0 0; font-size:.92rem;
+             font-family:system-ui,-apple-system,"Segoe UI",sans-serif }
+  nav.langs a{ color:var(--sub); text-decoration:none; border-bottom:1px solid transparent }
+  nav.langs a:hover{ color:var(--zhu) }
+  nav.langs a[aria-current]{ color:var(--zhu); border-bottom-color:var(--zhu) }
+  .doc header{ padding:40px 0 20px; border-bottom:1px solid var(--line); margin-bottom:8px }
+  h1{ font-size:1.8rem; letter-spacing:.06em; margin:0 0 .35em; font-weight:600 }
+  h1 small{ display:block; font-size:.95rem; letter-spacing:.04em; color:var(--sub); font-weight:400; margin-top:.45em }
+  .meta,.note{ color:var(--sub); font-size:.92rem }
+  .meta{ margin:0 }
+  h2{ font-size:1.15rem; margin:2.4em 0 .5em; font-weight:600; padding-top:.6em; border-top:1px solid var(--line) }
+  h3{ font-size:1rem; margin:1.6em 0 .35em; font-weight:600 }
+  ul{ padding-left:1.35em } li{ margin:.35em 0 }
+  a{ color:var(--zhu) }
+  table{ width:100%; border-collapse:collapse; margin:1.1em 0; font-size:.94rem }
+  th,td{ border:1px solid var(--line); padding:.6em .8em; text-align:left; vertical-align:top }
+  th{ background:rgba(157,45,32,.07); font-weight:600 }
+  .summary{ background:var(--box); border:1px solid var(--line); border-radius:4px; padding:1.1em 1.3em; margin:1.6em 0 }
+  .summary h3{ margin-top:0 }
+  footer{ margin-top:4em; padding-top:1.4em; border-top:1px solid var(--line); color:var(--sub); font-size:.9rem }
+  [hidden]{ display:none !important }
+  @media (max-width:520px){ body{font-size:16px} h1{font-size:1.45rem} }
 </style>
 </head>
 <body>
 <main>
+<nav class="langs" aria-label="Language"><a href="?lang=tw" hreflang="zh-Hant" data-code="tw">繁體中文</a><a href="?lang=cn" hreflang="zh-Hans" data-code="cn">简体中文</a><a href="?lang=en" hreflang="en" data-code="en">English</a><a href="?lang=ja" hreflang="ja" data-code="ja">日本語</a><a href="?lang=ko" hreflang="ko" data-code="ko">한국어</a><a href="?lang=de" hreflang="de" data-code="de">Deutsch</a><a href="?lang=fr" hreflang="fr" data-code="fr">Français</a><a href="?lang=es" hreflang="es" data-code="es">Español</a></nav>
 
+<article class="doc" id="doc-en" lang="en" data-title="Privacy Policy | Ink Builds Worlds">
 <header>
-  <h1>隱私權政策
-    <small>《落墨成勢》　Ink Builds Worlds</small>
-  </h1>
-  <p class="meta">生效日：2026 年 9 月 28 日　·　版本 1.1　·　最後更新：2026 年 9 月 28 日</p>
+  <h1>Privacy Policy<small>Ink Builds Worlds（《落墨成勢》）</small></h1>
+  <p class="meta">Last updated: 28 September 2026　·　Version 1.2</p>
 </header>
-
-<nav><a href="#en">English version below ↓</a></nav>
-
-<div class="summary">
-  <h3>摘要</h3>
-  <ul>
-    <li>本遊戲<strong>沒有帳號系統</strong>，我們不會為您建立個人檔案。</li>
-    <li>對局紀錄、設定與匯出的圖片<strong>只存放在您的裝置上</strong>。</li>
-    <li>單機模式的對局<strong>本身不連網</strong>（廣告載入除外）。</li>
-    <li>「移除廣告」由 Google Play／App Store 處理付款，<strong>我們拿不到任何付款資訊</strong>。</li>
-    <li>使用聯機對局時，配對資訊會短暫經過我們的伺服器（十分鐘後刪除），
-        且第三方 STUN 服務會取得您的 IP 位址。</li>
-    <li>本遊戲顯示 Google AdMob 廣告。<strong>廣告不影響對局結果。</strong></li>
-  </ul>
-  <p style="margin-bottom:0"><small>本摘要僅供快速理解，完整內容以下方條款為準。</small></p>
-</div>
-
-<h2>一、資料控制者</h2>
-<p>
-本政策適用於行動遊戲《落墨成勢》（Ink Builds Worlds，以下稱「本遊戲」）之
-Android 與 iOS 版本。
-</p>
-<table>
-  <tr><th>控制者</th><td>FireCat Studio（個人開發者）</td></tr>
-  <tr><th>聯絡方式</th><td><a href="mailto:carter870808@gmail.com">carter870808@gmail.com</a></td></tr>
-  <tr><th>應用程式識別碼</th><td><code>com.firecatstudio.inkgame</code></td></tr>
-</table>
-<p>本遊戲未指定資料保護長（DPO），亦未達法規要求指定之門檻。</p>
-
-<h2>二、我們處理的資料</h2>
-
-<h3>2.1　儲存於您裝置上的資料</h3>
-<p>下列資料僅寫入本機儲存空間，不會傳輸至我們或任何第三方：</p>
-<table>
-  <tr><th>類別</th><th>內容</th></tr>
-  <tr><td>對局與練習紀錄</td><td>日期時間、遊戲模式、比分、重疊率、該局盤面縮圖</td></tr>
-  <tr><td>應用程式設定</td><td>顯示名稱、音量、語言、節能模式、輔助提示開關</td></tr>
-  <tr><td>收藏與戰績統計</td><td>各模式的對局與勝場數、已解鎖的背景／頭像／插圖、您選用的頭像與大廳背景</td></tr>
-  <tr><td>購買狀態</td><td>是否已購買「移除廣告」（僅為本機快取，以商店紀錄為準）</td></tr>
-  <tr><td>匯出圖片</td><td>由您主動選擇「存到相簿」時產生之 PNG 檔</td></tr>
-</table>
-<p>
-解除安裝本遊戲即會刪除上述資料。已由您存入系統相簿之圖片不在此限，
-其管理權歸屬於您的裝置。
-</p>
-
-<h3>2.2　聯機對局</h3>
-<p>下列處理<strong>僅於您主動使用「聯機雙人」功能時發生</strong>。</p>
-
-<p><strong>（a）顯示名稱、頭像與貼圖</strong><br>
-您於設定頁輸入之名稱，以及您選用之頭像（遊戲內建圖案之編號），將傳送予對手並顯示於其畫面；
-對局中您點選之貼圖（同為遊戲內建圖案）亦會傳送予對手。未填寫名稱時顯示為預設名稱。
-本遊戲不驗證此名稱，亦不將其與任何身分資訊連結。
-<strong>請避免填入真實姓名或其他您不願為不特定人知悉之資訊。</strong></p>
-
-<p><strong>（b）配對中繼</strong><br>
-為使兩台裝置建立直接連線，下列資訊會暫存於我們自行部署之 Cloudflare Workers
-服務：房間代碼、WebRTC 連線描述（其中包含網路位址候選）、顯示名稱、頭像編號。</p>
-<table>
-  <tr><th>用途</th><td>僅用於協助兩位玩家建立連線</td></tr>
-  <tr><td>保存期間</td><td>建立房間後<strong>十分鐘</strong>自動刪除</td></tr>
-  <tr><td>後續利用</td><td>無。不進行分析、剖析或任何形式之再利用</td></tr>
-</table>
-<p>連線建立後，對局資料由兩台裝置直接往來，不經過我們的伺服器。</p>
-
-<p><strong>（c）STUN 服務</strong><br>
-建立直接連線須確認雙方在網際網路上的位址，此步驟使用下列第三方 STUN 服務，
-該等服務將取得您的 IP 位址：</p>
-<ul>
-  <li>Cloudflare, Inc.（<code>stun.cloudflare.com</code>）</li>
-  <li>Google LLC（<code>stun.l.google.com</code>）</li>
-</ul>
-
-<h3>2.3　廣告</h3>
-<p>
-本遊戲透過 Google AdMob 顯示廣告，用以支應開發與維運成本。廣告出現於三個時點：
-應用程式啟動時一次、數場對局之間一次、以及您主動點選「贊助作者」時。
-</p>
-<p>
-Google 可能蒐集並使用<strong>廣告識別碼</strong>及相關資訊，以提供、個人化及衡量廣告成效。
-其處理方式請參閱
-<a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google
-合作夥伴網站與應用程式政策</a>。
-</p>
-<p>
-<strong>廣告不影響對局結果。</strong>本遊戲之勝負判定為確定性演算，
-觀看廣告不會取得任何步數、道具或對局優勢；「贊助作者」之回饋僅為一枚紀念性落款印記。
-</p>
-
-<h3>2.4　購買「移除廣告」</h3>
-<p>
-本遊戲提供一次性購買「移除廣告」（非消耗性商品，無訂閱）。付款全程由
-Google Play（Android）或 Apple App Store（iOS）處理；我們<strong>不會取得</strong>您的姓名、
-付款方式或卡號，僅會從商店得知「此商店帳號是否擁有此商品」，並據以關閉非自願廣告。
-</p>
-<p>
-購買狀態以商店紀錄為準：換機或重新安裝後，可於「設定 → 恢復購買」找回；
-若該筆購買經商店退款，移除廣告之效果將隨之取消。
-退款與付款爭議請依各商店之規定向 Google Play 或 Apple 提出。
-</p>
-
-<h3>2.5　我們不處理的資料</h3>
-<ul>
-  <li>不蒐集姓名、電子郵件、電話號碼、通訊錄或精確位置資訊</li>
-  <li>不使用分析或使用者追蹤 SDK（第 2.3 節所述廣告所必需者除外）</li>
-  <li>不販售個人資料，亦不為第三方之行為廣告目的分享個人資料</li>
-  <li>不於伺服器端保存您的對局內容</li>
-  <li>不進行對您產生法律效果或類似重大影響之自動化決策或剖析</li>
-</ul>
-
-<h2>三、處理目的與法律依據</h2>
-<p>若您位於歐洲經濟區、英國或瑞士，我們依下列法律依據處理您的資料：</p>
-<table>
-  <tr><th>處理活動</th><th>目的</th><th>法律依據（GDPR）</th></tr>
-  <tr>
-    <td>配對中繼與 STUN</td>
-    <td>建立您所要求之聯機對局</td>
-    <td>第 6(1)(b) 條　履行契約（提供您主動要求之功能）</td>
-  </tr>
-  <tr>
-    <td>個人化廣告與成效衡量</td>
-    <td>支應本遊戲之開發與維運</td>
-    <td>第 6(1)(a) 條　同意（透過 Google User Messaging Platform 取得）</td>
-  </tr>
-  <tr>
-    <td>非個人化廣告</td>
-    <td>同上</td>
-    <td>第 6(1)(f) 條　正當利益（於您拒絕個人化廣告時適用）</td>
-  </tr>
-</table>
-
-<h2>四、資料接收者</h2>
-<table>
-  <tr><th>接收者</th><th>所涉資料</th><th>角色</th></tr>
-  <tr><td>Google LLC（AdMob、UMP、STUN）</td><td>廣告識別碼、同意狀態、IP 位址</td><td>獨立控制者／處理者</td></tr>
-  <tr><td>Cloudflare, Inc.（Workers、STUN）</td><td>配對資訊、IP 位址</td><td>處理者／獨立控制者</td></tr>
-  <tr><td>Google LLC（Google Play 結帳）／Apple Inc.（App Store）</td><td>購買紀錄</td><td>獨立控制者</td></tr>
-  <tr><td>您的對手</td><td>顯示名稱、頭像編號、貼圖、連線所需之網路位址</td><td>直接連線之相對人</td></tr>
-</table>
-<p>除上述者外，我們不將您的資料揭露予任何第三方，法律或主管機關依法要求者除外。</p>
-
-<h2>五、保存期間</h2>
-<table>
-  <tr><td>裝置上之資料</td><td>保留至您刪除紀錄或解除安裝本遊戲為止</td></tr>
-  <tr><td>配對中繼資料</td><td>建立房間後十分鐘自動刪除</td></tr>
-  <tr><td>廣告相關資料</td><td>依 Google 之保存政策辦理，本遊戲無法存取</td></tr>
-</table>
-
-<h2>六、國際傳輸</h2>
-<p>
-Google 與 Cloudflare 於全球營運，前述資料可能被傳輸至您所在國家以外之地區處理。
-該等服務供應商依其自身之資料傳輸機制（包括歐盟標準契約條款）辦理。
-</p>
-
-<h2>七、您的權利</h2>
-<p>
-由於本遊戲不保存可識別您身分之資料，通常無須向我們提出請求即可行使權利：
-<strong>刪除本機資料僅需解除安裝本遊戲</strong>。
-</p>
-<p>若您位於歐洲經濟區、英國或瑞士，您就其所持有之資料，享有下列權利：</p>
-<ul>
-  <li>請求存取、更正或刪除（第 15 至 17 條）</li>
-  <li>限制處理或反對處理（第 18、21 條）</li>
-  <li>資料可攜（第 20 條）</li>
-  <li><strong>隨時撤回廣告同意</strong>　—— 於本遊戲內「設定 → 隱私選項」即可變更</li>
-  <li>向主管監理機關提出申訴（第 77 條）</li>
-</ul>
-<p>
-關於 Google 所持有之廣告相關資料，請透過上方 Google 政策連結行使權利。
-您亦可於裝置系統設定中重設或刪除廣告識別碼
-（Android：設定 → Google → 廣告；iOS：設定 → 隱私權與安全性 → 追蹤）。
-</p>
-
-<h2>八、兒童</h2>
-<p>
-本遊戲非以未滿十三歲之兒童為目標對象，我們亦不會在知情之情況下蒐集兒童之個人資料。
-若您為家長或監護人並認為兒童向我們提供了個人資料，請與我們聯絡，我們將予以處理。
-</p>
-
-<h2>九、政策變更</h2>
-<p>
-本政策如有變更，將更新本頁首之生效日與版本編號。涉及重大變更者，將另於遊戲內告知。
-</p>
-
-<h2>十、聯絡方式</h2>
-<p>
-就本政策之任何疑問，請來信
-<a href="mailto:carter870808@gmail.com">carter870808@gmail.com</a>。
-</p>
-
-
-<!-- ══════════════════ ENGLISH ══════════════════ -->
-<div class="sep" id="en"></div>
-
-<header style="border-top:0; padding-top:0">
-  <h1>Privacy Policy
-    <small>Ink Builds Worlds（《落墨成勢》）</small>
-  </h1>
-  <p class="meta">Effective 28 September 2026　·　Version 1.1　·　Last updated 28 September 2026</p>
-</header>
-
+<p>This Privacy Policy explains how FireCat Studio (“we”, “us”) handles information in connection with the mobile game Ink Builds Worlds (the “Game”) on Android and iOS.</p>
 <div class="summary">
   <h3>Summary</h3>
-  <ul>
-    <li>The game has <strong>no accounts</strong>. We do not build a profile of you.</li>
-    <li>Match records, settings and exported images are <strong>stored only on your device</strong>.</li>
-    <li>Single-player matches <strong>need no network connection</strong> (apart from loading ads).</li>
-    <li>“Remove Ads” is paid through Google Play / the App Store; <strong>we never receive your payment details</strong>.</li>
-    <li>Online play briefly passes matchmaking data through our server (deleted after ten
-        minutes), and third-party STUN services receive your IP address.</li>
-    <li>The game shows Google AdMob advertising. <strong>Ads have no effect on play.</strong></li>
-  </ul>
-  <p style="margin-bottom:0"><small>This summary is for orientation only; the sections below govern.</small></p>
+<ul>
+  <li>The Game has no user accounts, and we do not create profiles of players.</li>
+  <li>Match history, settings and collection progress are stored only on your device.</li>
+  <li>During online matches, limited connection information passes through our matchmaking server and is deleted automatically within ten minutes.</li>
+  <li>The Game displays advertising provided by Google AdMob.</li>
+  <li>Payments for “Remove ads” are processed by Google Play or the App Store; we do not receive your payment details.</li>
+</ul>
+  <p class="note" style="margin-bottom:0">This summary is provided for convenience only; the full policy below prevails.</p>
 </div>
-
-<h2>1. Data controller</h2>
-<p>
-This policy applies to the Android and iOS versions of the mobile game
-Ink Builds Worlds (《落墨成勢》, “the game”).
-</p>
+<h2>1. Who we are</h2>
+<p>FireCat Studio, an individual developer, is responsible for the processing described in this policy. Contact: <a href="mailto:firecat870808@gmail.com">firecat870808@gmail.com</a></p>
+<h2>2. Information we process</h2>
+<h3>2.1　Information stored on your device</h3><p>The following information is stored locally on your device and is not transmitted to us:</p><ul>
+  <li>match history and statistics;</li>
+  <li>settings, including your display name, language and sound preferences;</li>
+  <li>collection progress and your chosen avatar and background;</li>
+  <li>whether “Remove ads” has been purchased (a local record; the store’s record is authoritative);</li>
+  <li>images you choose to save to your photo library.</li>
+</ul><p>This information is deleted when you uninstall the Game, except for images already saved to your photo library.</p><h3>2.2　Online matches</h3><p>This section applies only when you use online multiplayer.</p><p><strong>(a) Information shown to your opponent.</strong> Your display name, selected avatar and any stickers you send during a match are shown to your opponent. Avatars and stickers are images built into the Game. We recommend that you do not use your real name as your display name.</p><p><strong>(b) Matchmaking server.</strong> To connect two devices, the room code, the network information required to establish the connection (including IP addresses), and your display name and avatar are stored temporarily on our matchmaking server, which we operate on Cloudflare’s infrastructure. This information is deleted automatically ten minutes after the room is created and is not used for any other purpose. Once connected, match data is exchanged directly between the two devices.</p><p><strong>(c) Connection services.</strong> To determine connection addresses, the Game uses STUN services provided by Cloudflare and Google, which receive your IP address.</p><h3>2.3　Advertising</h3><p>The Game displays advertising through Google AdMob. Google may collect and use your device’s advertising identifier, IP address, device information and ad interaction data to serve, personalise and measure advertising. For details, see <a href="https://policies.google.com/technologies/partner-sites?hl=en" target="_blank" rel="noopener">How Google uses information from sites or apps that use its services</a>. Advertising does not affect gameplay or match outcomes.</p><h3>2.4　In-app purchase</h3><p>The Game offers a one-time purchase, “Remove ads”. Payment is processed by Google Play or the Apple App Store; we do not receive your name or payment details, only confirmation of whether your store account owns the item. You may restore the purchase via Settings → Restore purchases. If a purchase is refunded, its effect will be withdrawn. Refunds and payment disputes are handled by the respective store under its own terms.</p><h3>2.5　Information we do not collect</h3><p>We do not collect your name, email address, telephone number, contacts or precise location. We do not use analytics or tracking tools other than those required for the advertising described in Section 2.3. We do not sell personal information.</p>
+<h2>3. Legal bases (EEA, United Kingdom and Switzerland)</h2>
 <table>
-  <tr><th>Controller</th><td>FireCat Studio (sole developer)</td></tr>
-  <tr><th>Contact</th><td><a href="mailto:carter870808@gmail.com">carter870808@gmail.com</a></td></tr>
-  <tr><th>Application ID</th><td><code>com.firecatstudio.inkgame</code></td></tr>
+  <tr><th>Processing</th><th>Legal basis</th></tr>
+  <tr><td>Online matches</td><td>Art. 6(1)(b) GDPR — performance of a contract</td></tr>
+  <tr><td>In-app purchase</td><td>Art. 6(1)(b) GDPR — performance of a contract</td></tr>
+  <tr><td>Personalised advertising</td><td>Art. 6(1)(a) GDPR — consent, obtained through Google’s consent tool</td></tr>
+  <tr><td>Non-personalised advertising</td><td>Art. 6(1)(f) GDPR — legitimate interest in funding the Game</td></tr>
 </table>
-<p>No Data Protection Officer has been appointed; the statutory threshold for doing so is not met.</p>
-
-<h2>2. Data we process</h2>
-
-<h3>2.1　Data stored on your device</h3>
-<p>The following is written to local storage only. It is not transmitted to us or to any third party:</p>
-<table>
-  <tr><th>Category</th><th>Contents</th></tr>
-  <tr><td>Match and practice records</td><td>Date and time, game mode, scores, overlap ratio, a thumbnail of the board</td></tr>
-  <tr><td>Application settings</td><td>Display name, volume, language, power-saving mode, assistance toggles</td></tr>
-  <tr><td>Collection and statistics</td><td>Matches played and won per mode, unlocked backdrops / avatars / illustrations, the avatar and lobby backdrop you chose</td></tr>
-  <tr><td>Purchase status</td><td>Whether “Remove Ads” has been bought (a local cache only; the store's record is authoritative)</td></tr>
-  <tr><td>Exported images</td><td>PNG files created when you choose to save a board to your photo library</td></tr>
-</table>
-<p>
-Uninstalling the game deletes this data. Images you have already saved to your system photo
-library are not affected and remain under your control.
-</p>
-
-<h3>2.2　Online play</h3>
-<p>The following occurs <strong>only when you actively use the online multiplayer feature</strong>.</p>
-
-<p><strong>(a) Display name, avatar and stickers</strong><br>
-The name you enter in settings and the avatar you choose (the number of a built-in picture) are
-sent to your opponent and shown on their screen; stickers you tap during a match (also built-in
-pictures) are sent to your opponent as well. If the name is left blank, a default name is shown. We do not verify this name or link it to any identity.
-<strong>Please avoid entering your real name or anything you would not wish an unknown
-person to see.</strong></p>
-
-<p><strong>(b) Matchmaking relay</strong><br>
-To allow two devices to connect directly, the following is temporarily stored on a Cloudflare
-Workers service operated by us: the room code, the WebRTC session description (which includes
-network address candidates), the display name and the avatar number.</p>
-<table>
-  <tr><th>Purpose</th><td>Solely to connect two players</td></tr>
-  <tr><td>Retention</td><td>Deleted automatically <strong>ten minutes</strong> after the room is created</td></tr>
-  <tr><td>Further use</td><td>None. No analysis, profiling or any secondary use</td></tr>
-</table>
-<p>Once connected, match data passes directly between the two devices and does not traverse our servers.</p>
-
-<p><strong>(c) STUN services</strong><br>
-Establishing a direct connection requires determining each side's address on the internet.
-This step uses the following third-party STUN services, which receive your IP address:</p>
-<ul>
-  <li>Cloudflare, Inc. (<code>stun.cloudflare.com</code>)</li>
-  <li>Google LLC (<code>stun.l.google.com</code>)</li>
-</ul>
-
-<h3>2.3　Advertising</h3>
-<p>
-The game displays advertising through Google AdMob to cover the cost of development and
-operation. Ads appear at three points: once when the application is opened, once between
-every few matches, and when you choose “Support the Author”.
-</p>
-<p>
-Google may collect and use an <strong>advertising identifier</strong> and related information
-to serve, personalise and measure advertising. See
-<a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How
-Google uses information from sites or apps that use our services</a>.
-</p>
-<p>
-<strong>Advertising has no effect on play.</strong> The game's outcome is determined by a
-deterministic simulation; watching an advertisement grants no moves, items or advantage of any
-kind. The reward for “Support the Author” is a commemorative seal only.
-</p>
-
-<h3>2.4　Buying “Remove Ads”</h3>
-<p>
-The game offers a single one-time purchase, “Remove Ads” (a non-consumable item; no
-subscriptions). Payment is handled entirely by Google Play (Android) or the Apple App Store (iOS).
-We <strong>do not receive</strong> your name, payment method or card number; we only learn from
-the store whether this store account owns the item, and switch off non-voluntary ads accordingly.
-</p>
-<p>
-The store's record is authoritative: after changing devices or reinstalling, use
-Settings → Restore Purchases; if the purchase is refunded by the store, ads return.
-Refunds and payment disputes are handled by Google Play or Apple under their own terms.
-</p>
-
-<h3>2.5　What we do not process</h3>
-<ul>
-  <li>We do not collect names, email addresses, telephone numbers, contacts or precise location</li>
-  <li>We use no analytics or user-tracking SDK, other than what the advertising in §2.3 requires</li>
-  <li>We do not sell personal data, nor share it for third-party behavioural advertising</li>
-  <li>We do not retain your match content on any server</li>
-  <li>We carry out no automated decision-making or profiling producing legal or similarly significant effects</li>
-</ul>
-
-<h2>3. Purposes and legal bases</h2>
-<p>If you are located in the EEA, the United Kingdom or Switzerland, we rely on the following bases:</p>
-<table>
-  <tr><th>Processing</th><th>Purpose</th><th>Legal basis (GDPR)</th></tr>
-  <tr>
-    <td>Matchmaking relay and STUN</td>
-    <td>To establish the online match you requested</td>
-    <td>Art. 6(1)(b) — performance of a contract (a feature you actively invoke)</td>
-  </tr>
-  <tr>
-    <td>Personalised advertising and measurement</td>
-    <td>To fund development and operation of the game</td>
-    <td>Art. 6(1)(a) — consent, obtained via Google's User Messaging Platform</td>
-  </tr>
-  <tr>
-    <td>Non-personalised advertising</td>
-    <td>As above</td>
-    <td>Art. 6(1)(f) — legitimate interests, where you decline personalised ads</td>
-  </tr>
-</table>
-
 <h2>4. Recipients</h2>
-<table>
-  <tr><th>Recipient</th><th>Data involved</th><th>Role</th></tr>
-  <tr><td>Google LLC (AdMob, UMP, STUN)</td><td>Advertising identifier, consent state, IP address</td><td>Independent controller / processor</td></tr>
-  <tr><td>Cloudflare, Inc. (Workers, STUN)</td><td>Matchmaking data, IP address</td><td>Processor / independent controller</td></tr>
-  <tr><td>Google LLC (Google Play billing) / Apple Inc. (App Store)</td><td>Purchase record</td><td>Independent controller</td></tr>
-  <tr><td>Your opponent</td><td>Display name, avatar number, stickers, network addresses needed to connect</td><td>The other party to a direct connection</td></tr>
-</table>
-<p>We disclose your data to no one else, except where required by law or a competent authority.</p>
-
-<h2>5. Retention</h2>
-<table>
-  <tr><td>Data on your device</td><td>Until you delete the records or uninstall the game</td></tr>
-  <tr><td>Matchmaking data</td><td>Deleted automatically ten minutes after the room is created</td></tr>
-  <tr><td>Advertising data</td><td>Per Google's own retention policy; we have no access to it</td></tr>
-</table>
-
-<h2>6. International transfers</h2>
-<p>
-Google and Cloudflare operate globally, and the data described above may be processed outside
-your country of residence. Those providers rely on their own transfer mechanisms, including the
-EU Standard Contractual Clauses.
-</p>
-
-<h2>7. Your rights</h2>
-<p>
-Because we hold no data that identifies you, most rights can be exercised without contacting us:
-<strong>uninstalling the game deletes the local data</strong>.
-</p>
-<p>If you are in the EEA, the UK or Switzerland, you have the following rights over data held about you:</p>
 <ul>
-  <li>Access, rectification and erasure (Arts. 15–17)</li>
-  <li>Restriction of, and objection to, processing (Arts. 18, 21)</li>
-  <li>Data portability (Art. 20)</li>
-  <li><strong>Withdrawal of advertising consent at any time</strong> — via Settings → Privacy Options in the game</li>
-  <li>Lodging a complaint with a supervisory authority (Art. 77)</li>
+  <li>Google LLC (AdMob, Google Play, STUN)</li>
+  <li>Apple Inc. (App Store)</li>
+  <li>Cloudflare, Inc. (matchmaking server, STUN)</li>
+  <li>Your opponent (display name, avatar, stickers and the network information required to connect)</li>
+</ul><p>We do not disclose information to any other party except where required by law.</p>
+<h2>5. Retention</h2>
+<ul>
+  <li>Information on your device: until you delete it or uninstall the Game.</li>
+  <li>Matchmaking information: ten minutes after the room is created.</li>
+  <li>Advertising and purchase information: in accordance with the policies of Google or Apple.</li>
 </ul>
-<p>
-For advertising data held by Google, exercise your rights through the Google policy linked above.
-You may also reset or delete your advertising identifier in your device settings
-(Android: Settings → Google → Ads; iOS: Settings → Privacy &amp; Security → Tracking).
-</p>
+<h2>6. International transfers</h2>
+<p>Google, Apple and Cloudflare operate globally, and information may be processed outside your country of residence. These providers rely on appropriate safeguards, such as the EU Standard Contractual Clauses.</p>
+<h2>7. Security</h2>
+<p>Information transmitted by the Game is encrypted in transit. No method of transmission or storage is completely secure, but we take reasonable measures to protect information.</p>
+<h2>8. Your rights and choices</h2>
+<ul>
+  <li>You can delete the information stored on your device by uninstalling the Game.</li>
+  <li>If you are in the EEA, the United Kingdom or Switzerland, you have the rights of access, rectification, erasure, restriction of processing, objection and data portability, and the right to lodge a complaint with a supervisory authority.</li>
+  <li>Where applicable, you may change your advertising consent at any time in the Game under Settings → Privacy Options.</li>
+  <li>Where the law of your place of residence gives you the right to opt out of the use of personal information for targeted advertising, you may exercise it through the Game’s privacy options (where shown) or your device’s advertising settings.</li>
+  <li>You may reset or delete your advertising identifier in your device settings.</li>
+</ul><p>To exercise your rights, please contact us at the address below.</p>
+<h2>9. Children</h2>
+<p>The Game is not directed to children under the age of 13, and we do not knowingly collect personal information from them. If you believe that a child has provided us with personal information, please contact us.</p>
+<h2>10. Changes to this policy</h2>
+<p>We may update this policy. When we do, we will revise the “last updated” date above, and material changes will be notified within the Game.</p>
+<h2>11. Contact</h2>
+<p>For any questions about this policy, please contact <a href="mailto:firecat870808@gmail.com">firecat870808@gmail.com</a>.</p>
+</article>
+<article class="doc" id="doc-tw" lang="zh-Hant" data-title="隱私權政策｜落墨成勢" hidden>
+<header>
+  <h1>隱私權政策<small>《落墨成勢》</small></h1>
+  <p class="meta">最後更新：2026 年 9 月 28 日　·　版本 1.2</p>
+</header>
+<p>本隱私權政策說明 FireCat Studio（以下稱「我們」）於行動遊戲《落墨成勢》（以下稱「本遊戲」）之 Android 及 iOS 版本中處理資訊之方式。</p>
+<p class="note">本政策提供多種語言版本；各語言版本如有歧異，以英文版為準。</p>
+<div class="summary">
+  <h3>摘要</h3>
+<ul>
+  <li>本遊戲未設帳號系統，我們不會建立玩家個人檔案。</li>
+  <li>對局紀錄、設定及收藏進度僅儲存於您的裝置。</li>
+  <li>進行聯機對局時，有限之連線資訊將經由我們的配對伺服器傳遞，並於十分鐘內自動刪除。</li>
+  <li>本遊戲顯示由 Google AdMob 提供之廣告。</li>
+  <li>「移除廣告」之付款由 Google Play 或 App Store 處理，我們不會取得您的付款資訊。</li>
+</ul>
+  <p class="note" style="margin-bottom:0">本摘要僅供參考，完整內容以下列條款為準。</p>
+</div>
+<h2>一、資料控制者</h2>
+<p>本政策所述資訊處理之負責人為個人開發者 FireCat Studio。聯絡方式：<a href="mailto:firecat870808@gmail.com">firecat870808@gmail.com</a></p>
+<h2>二、我們處理之資訊</h2>
+<h3>2.1　儲存於您裝置之資訊</h3><p>下列資訊僅儲存於您的裝置，不會傳送予我們：</p><ul>
+  <li>對局紀錄及統計資料；</li>
+  <li>遊戲設定，包括顯示名稱、語言及音效偏好；</li>
+  <li>收藏進度及您所選用之頭像與背景；</li>
+  <li>「移除廣告」之購買狀態（僅為本機紀錄，以商店紀錄為準）；</li>
+  <li>您選擇存入相簿之圖片。</li>
+</ul><p>解除安裝本遊戲時，上述資訊將一併刪除；已存入相簿之圖片不在此限。</p><h3>2.2　聯機對局</h3><p>本節僅適用於您使用聯機對戰功能時。</p><p><strong>（一）對手可見之資訊。</strong>您的顯示名稱、所選頭像及於對局中傳送之貼圖，將顯示於對手之畫面。頭像及貼圖均為本遊戲內建之圖案。建議您勿以真實姓名作為顯示名稱。</p><p><strong>（二）配對伺服器。</strong>為使雙方裝置建立連線，房間代碼、建立連線所需之網路資訊（含 IP 位址）以及您的顯示名稱與頭像，將暫存於我們以 Cloudflare 基礎設施營運之配對伺服器。上述資訊於房間建立後十分鐘自動刪除，且不作其他用途。連線建立後，對局資料於雙方裝置間直接傳輸。</p><p><strong>（三）連線服務。</strong>為確認連線位址，本遊戲使用 Cloudflare 及 Google 提供之 STUN 服務，該等服務將取得您的 IP 位址。</p><h3>2.3　廣告</h3><p>本遊戲透過 Google AdMob 顯示廣告。Google 可能收集並使用您裝置之廣告識別碼、IP 位址、裝置資訊及廣告互動資料，以提供、個人化及衡量廣告。詳情請參閱<a href="https://policies.google.com/technologies/partner-sites?hl=zh-TW" target="_blank" rel="noopener">〈Google 如何使用合作夥伴網站或應用程式的資訊〉</a>。廣告不影響遊戲進行或對局結果。</p><h3>2.4　應用程式內購買</h3><p>本遊戲提供一次性購買項目「移除廣告」。付款由 Google Play 或 Apple App Store 處理；我們不會取得您的姓名或付款資訊，僅會取得您的商店帳號是否擁有該項目之確認。您可透過「設定 → 恢復購買」回復購買。購買如經退款，其效果將予取消。退款及付款爭議由各商店依其規定處理。</p><h3>2.5　我們不收集之資訊</h3><p>我們不收集您的姓名、電子郵件地址、電話號碼、通訊錄或精確位置資訊；除第 2.3 節所述廣告所需者外，不使用分析或追蹤工具。我們不販售個人資訊。</p>
+<h2>三、法律依據（適用於歐洲經濟區、英國及瑞士）</h2>
+<table>
+  <tr><th>處理活動</th><th>法律依據</th></tr>
+  <tr><td>聯機對局</td><td>GDPR 第 6 條第 1 項 (b) 款：履行契約</td></tr>
+  <tr><td>應用程式內購買</td><td>GDPR 第 6 條第 1 項 (b) 款：履行契約</td></tr>
+  <tr><td>個人化廣告</td><td>GDPR 第 6 條第 1 項 (a) 款：同意（透過 Google 同意管理工具取得）</td></tr>
+  <tr><td>非個人化廣告</td><td>GDPR 第 6 條第 1 項 (f) 款：維持本遊戲營運之正當利益</td></tr>
+</table>
+<h2>四、資料接收者</h2>
+<ul>
+  <li>Google LLC（AdMob、Google Play、STUN）</li>
+  <li>Apple Inc.（App Store）</li>
+  <li>Cloudflare, Inc.（配對伺服器、STUN）</li>
+  <li>您的對手（顯示名稱、頭像、貼圖及建立連線所需之網路資訊）</li>
+</ul><p>除依法令要求者外，我們不會將資訊揭露予其他第三方。</p>
+<h2>五、保存期間</h2>
+<ul>
+  <li>裝置上之資訊：至您刪除該資訊或解除安裝本遊戲為止。</li>
+  <li>配對資訊：房間建立後十分鐘。</li>
+  <li>廣告及購買相關資訊：依 Google 或 Apple 之政策辦理。</li>
+</ul>
+<h2>六、國際傳輸</h2>
+<p>Google、Apple 及 Cloudflare 於全球營運，資訊可能於您所在國家以外之地區處理。該等服務供應商依歐盟標準契約條款等適當保障措施辦理傳輸。</p>
+<h2>七、資訊安全</h2>
+<p>本遊戲傳輸之資訊於傳輸過程中均經加密。任何傳輸或儲存方式均無法保證絕對安全，惟我們將採取合理措施保護資訊。</p>
+<h2>八、您的權利與選擇</h2>
+<ul>
+  <li>您可透過解除安裝本遊戲，刪除儲存於裝置之資訊。</li>
+  <li>若您位於歐洲經濟區、英國或瑞士，您享有請求存取、更正、刪除、限制處理、反對處理及資料可攜之權利，並得向主管監理機關提出申訴。</li>
+  <li>於適用情形下，您得隨時於本遊戲「設定 → 隱私選項」變更廣告同意。</li>
+  <li>若您所在地之法律賦予您拒絕將個人資訊用於目標式廣告之權利，您得透過本遊戲之隱私選項（如有顯示）或裝置之廣告設定行使之。</li>
+  <li>您得於裝置設定中重設或刪除廣告識別碼。</li>
+</ul><p>如欲行使上述權利，請依下列聯絡方式與我們聯繫。</p>
+<h2>九、兒童</h2>
+<p>本遊戲並非以未滿十三歲之兒童為對象，我們亦不會在知情之情況下收集兒童之個人資訊。如您認為有兒童向我們提供個人資訊，請與我們聯繫。</p>
+<h2>十、政策變更</h2>
+<p>我們得修訂本政策。修訂時將更新上方之最後更新日期；如有重大變更，將另於本遊戲內通知。</p>
+<h2>十一、聯絡我們</h2>
+<p>如對本政策有任何疑問，請來信 <a href="mailto:firecat870808@gmail.com">firecat870808@gmail.com</a>。</p>
+</article>
+<article class="doc" id="doc-cn" lang="zh-Hans" data-title="隐私政策｜落墨成势" hidden>
+<header>
+  <h1>隐私政策<small>《落墨成势》</small></h1>
+  <p class="meta">最后更新：2026 年 9 月 28 日　·　版本 1.2</p>
+</header>
+<p>本隐私政策说明 FireCat Studio（以下称“我们”）在移动游戏《落墨成势》（以下称“本游戏”）的 Android 及 iOS 版本中处理信息的方式。</p>
+<p class="note">本政策提供多种语言版本；各语言版本如有不一致，以英文版为准。</p>
+<div class="summary">
+  <h3>摘要</h3>
+<ul>
+  <li>本游戏不设账号系统，我们不会创建玩家个人档案。</li>
+  <li>对局记录、设置及收藏进度仅保存在您的设备上。</li>
+  <li>进行联机对局时，有限的连接信息将经由我们的匹配服务器传递，并在十分钟内自动删除。</li>
+  <li>本游戏展示由 Google AdMob 提供的广告。</li>
+  <li>“移除广告”的付款由 Google Play 或 App Store 处理，我们不会获取您的支付信息。</li>
+</ul>
+  <p class="note" style="margin-bottom:0">本摘要仅供参考，完整内容以下列条款为准。</p>
+</div>
+<h2>一、个人信息处理者</h2>
+<p>本政策所述信息处理的负责人为个人开发者 FireCat Studio。联系方式：<a href="mailto:firecat870808@gmail.com">firecat870808@gmail.com</a></p>
+<h2>二、我们处理的信息</h2>
+<h3>2.1　保存在您设备上的信息</h3><p>下列信息仅保存在您的设备上，不会发送给我们：</p><ul>
+  <li>对局记录及统计数据；</li>
+  <li>游戏设置，包括显示名称、语言及音效偏好；</li>
+  <li>收藏进度及您所选用的头像与背景；</li>
+  <li>“移除广告”的购买状态（仅为本机记录，以商店记录为准）；</li>
+  <li>您选择保存到相册的图片。</li>
+</ul><p>卸载本游戏时，上述信息将一并删除；已保存到相册的图片除外。</p><h3>2.2　联机对局</h3><p>本节仅适用于您使用联机对战功能时。</p><p><strong>（一）对手可见的信息。</strong>您的显示名称、所选头像及在对局中发送的贴图，将显示在对手的画面上。头像及贴图均为本游戏内置的图案。建议您不要以真实姓名作为显示名称。</p><p><strong>（二）匹配服务器。</strong>为使双方设备建立连接，房间代码、建立连接所需的网络信息（含 IP 地址）以及您的显示名称与头像，将临时存储在我们基于 Cloudflare 基础设施运营的匹配服务器上。上述信息在房间创建十分钟后自动删除，且不作其他用途。连接建立后，对局数据在双方设备之间直接传输。</p><p><strong>（三）连接服务。</strong>为确认连接地址，本游戏使用 Cloudflare 及 Google 提供的 STUN 服务，相关服务将获取您的 IP 地址。</p><h3>2.3　广告</h3><p>本游戏通过 Google AdMob 展示广告。Google 可能收集并使用您设备的广告标识符、IP 地址、设备信息及广告互动数据，用于投放、个性化及衡量广告。详情请参阅<a href="https://policies.google.com/technologies/partner-sites?hl=zh-CN" target="_blank" rel="noopener">《Google 如何使用来自使用其服务的网站或应用的信息》</a>。广告不影响游戏进程或对局结果。</p><h3>2.4　应用内购买</h3><p>本游戏提供一次性购买项目“移除广告”。付款由 Google Play 或 Apple App Store 处理；我们不会获取您的姓名或支付信息，仅会获取您的商店账号是否拥有该项目的确认。您可通过“设置 → 恢复购买”恢复购买。购买如经退款，其效果将被取消。退款及支付争议由各商店依其规定处理。</p><h3>2.5　我们不收集的信息</h3><p>我们不收集您的姓名、电子邮件地址、电话号码、通讯录或精确位置信息；除第 2.3 节所述广告所需者外，不使用分析或追踪工具。我们不出售个人信息。</p>
+<h2>三、法律依据（适用于欧洲经济区、英国及瑞士）</h2>
+<table>
+  <tr><th>处理活动</th><th>法律依据</th></tr>
+  <tr><td>联机对局</td><td>GDPR 第 6 条第 1 款 (b) 项：履行合同</td></tr>
+  <tr><td>应用内购买</td><td>GDPR 第 6 条第 1 款 (b) 项：履行合同</td></tr>
+  <tr><td>个性化广告</td><td>GDPR 第 6 条第 1 款 (a) 项：同意（通过 Google 同意管理工具获取）</td></tr>
+  <tr><td>非个性化广告</td><td>GDPR 第 6 条第 1 款 (f) 项：维持本游戏运营的正当利益</td></tr>
+</table>
+<h2>四、信息接收方</h2>
+<ul>
+  <li>Google LLC（AdMob、Google Play、STUN）</li>
+  <li>Apple Inc.（App Store）</li>
+  <li>Cloudflare, Inc.（匹配服务器、STUN）</li>
+  <li>您的对手（显示名称、头像、贴图及建立连接所需的网络信息）</li>
+</ul><p>除法律法规要求外，我们不会向其他第三方披露信息。</p>
+<h2>五、保存期限</h2>
+<ul>
+  <li>设备上的信息：至您删除该信息或卸载本游戏为止。</li>
+  <li>匹配信息：房间创建后十分钟。</li>
+  <li>广告及购买相关信息：依 Google 或 Apple 的政策处理。</li>
+</ul>
+<h2>六、跨境传输</h2>
+<p>Google、Apple 及 Cloudflare 在全球运营，信息可能在您所在国家或地区以外处理。相关服务提供商依欧盟标准合同条款等适当保障措施进行传输。</p>
+<h2>七、信息安全</h2>
+<p>本游戏传输的信息在传输过程中均经过加密。任何传输或存储方式均无法保证绝对安全，但我们将采取合理措施保护信息。</p>
+<h2>八、您的权利与选择</h2>
+<ul>
+  <li>您可通过卸载本游戏，删除保存在设备上的信息。</li>
+  <li>若您位于欧洲经济区、英国或瑞士，您享有访问、更正、删除、限制处理、反对处理及数据可携带的权利，并有权向监管机构投诉。</li>
+  <li>在适用情形下，您可随时在本游戏“设置 → 隐私选项”中更改广告同意。</li>
+  <li>若您所在地的法律赋予您拒绝将个人信息用于定向广告的权利，您可通过本游戏的隐私选项（如有显示）或设备的广告设置行使该权利。</li>
+  <li>您可在设备设置中重置或删除广告标识符。</li>
+</ul><p>如需行使上述权利，请通过下列联系方式与我们联系。</p>
+<h2>九、儿童</h2>
+<p>本游戏并非面向未满十三周岁的儿童，我们也不会在知情的情况下收集儿童的个人信息。如您认为有儿童向我们提供了个人信息，请与我们联系。</p>
+<h2>十、政策变更</h2>
+<p>我们可能修订本政策。修订时将更新上方的最后更新日期；如有重大变更，将另在本游戏内通知。</p>
+<h2>十一、联系我们</h2>
+<p>如对本政策有任何疑问，请发送邮件至 <a href="mailto:firecat870808@gmail.com">firecat870808@gmail.com</a>。</p>
+</article>
+<article class="doc" id="doc-ja" lang="ja" data-title="プライバシーポリシー｜墨取り" hidden>
+<header>
+  <h1>プライバシーポリシー<small>墨取り（《落墨成勢》）</small></h1>
+  <p class="meta">最終更新日：2026年9月28日　·　バージョン 1.2</p>
+</header>
+<p>本プライバシーポリシーは、FireCat Studio（以下「当方」）が、モバイルゲーム「墨取り」（以下「本ゲーム」）の Android 版および iOS 版において、情報をどのように取り扱うかを説明するものです。</p>
+<p class="note">本ポリシーは複数の言語で提供されています。各言語版の間に相違がある場合は、英語版が優先します。</p>
+<div class="summary">
+  <h3>概要</h3>
+<ul>
+  <li>本ゲームにはアカウント機能がなく、当方がプレイヤーのプロフィールを作成することはありません。</li>
+  <li>対局記録、設定およびコレクションの進行状況は、お使いの端末にのみ保存されます。</li>
+  <li>オンライン対局では、接続に必要な限られた情報が当方のマッチングサーバーを経由し、10分以内に自動的に削除されます。</li>
+  <li>本ゲームでは Google AdMob が提供する広告を表示します。</li>
+  <li>「広告を消す」の決済は Google Play または App Store が行い、当方がお支払い情報を取得することはありません。</li>
+</ul>
+  <p class="note" style="margin-bottom:0">この概要は便宜上のものであり、以下の本文が優先します。</p>
+</div>
+<h2>1. 管理者</h2>
+<p>本ポリシーに記載する情報の取扱いの責任者は、個人開発者である FireCat Studio です。連絡先：<a href="mailto:firecat870808@gmail.com">firecat870808@gmail.com</a></p>
+<h2>2. 当方が取り扱う情報</h2>
+<h3>2.1　端末に保存される情報</h3><p>以下の情報はお使いの端末にのみ保存され、当方に送信されることはありません。</p><ul>
+  <li>対局記録および統計</li>
+  <li>表示名、言語、サウンドなどの設定</li>
+  <li>コレクションの進行状況、選択したアイコンおよび背景</li>
+  <li>「広告を消す」の購入状態（端末内の記録であり、ストアの記録が優先します）</li>
+  <li>写真ライブラリへの保存を選択した画像</li>
+</ul><p>本ゲームをアンインストールすると、これらの情報は削除されます。ただし、写真ライブラリに保存済みの画像は除きます。</p><h3>2.2　オンライン対局</h3><p>本項は、オンライン対局機能をご利用になる場合にのみ適用されます。</p><p><strong>(a) 対局相手に表示される情報。</strong>表示名、選択したアイコン、および対局中に送信したスタンプは、対局相手の画面に表示されます。アイコンとスタンプはいずれも本ゲームに内蔵された画像です。表示名に本名を使用しないことをお勧めします。</p><p><strong>(b) マッチングサーバー。</strong>2台の端末を接続するため、ルームコード、接続の確立に必要なネットワーク情報（IPアドレスを含む）、表示名およびアイコンが、当方が Cloudflare の基盤上で運用するマッチングサーバーに一時的に保存されます。これらの情報はルーム作成から10分後に自動的に削除され、その他の目的には使用されません。接続後、対局データは両端末間で直接やり取りされます。</p><p><strong>(c) 接続サービス。</strong>接続先アドレスを確認するため、本ゲームは Cloudflare および Google が提供する STUN サービスを使用します。これらのサービスはお客様の IP アドレスを受け取ります。</p><h3>2.3　広告</h3><p>本ゲームは Google AdMob を通じて広告を表示します。Google は、広告の配信、パーソナライズおよび効果測定のため、端末の広告 ID、IP アドレス、端末情報および広告とのやり取りに関するデータを収集・使用することがあります。詳しくは<a href="https://policies.google.com/technologies/partner-sites?hl=ja" target="_blank" rel="noopener">「Google のサービスを使用するサイトやアプリから収集した情報の Google による使用」</a>をご覧ください。広告がゲームの進行や対局結果に影響することはありません。</p><h3>2.4　アプリ内課金</h3><p>本ゲームでは、買い切りのアイテム「広告を消す」を提供しています。決済は Google Play または Apple App Store が行います。当方がお客様の氏名やお支払い情報を取得することはなく、ストアアカウントが当該アイテムを所有しているかどうかの確認のみを受け取ります。購入は「設定 → 購入を復元」から復元できます。購入が返金された場合、その効果は取り消されます。返金および決済に関する紛争は、各ストアの規約に従って取り扱われます。</p><h3>2.5　収集しない情報</h3><p>当方は、氏名、メールアドレス、電話番号、連絡先、正確な位置情報を収集しません。第2.3項の広告に必要なものを除き、分析ツールやトラッキングツールは使用しません。当方は個人情報を販売しません。</p>
+<h2>3. 法的根拠（欧州経済領域、英国およびスイス）</h2>
+<table>
+  <tr><th>取扱い</th><th>法的根拠</th></tr>
+  <tr><td>オンライン対局</td><td>GDPR 第6条第1項(b)：契約の履行</td></tr>
+  <tr><td>アプリ内課金</td><td>GDPR 第6条第1項(b)：契約の履行</td></tr>
+  <tr><td>パーソナライズ広告</td><td>GDPR 第6条第1項(a)：同意（Google の同意管理ツールにより取得）</td></tr>
+  <tr><td>非パーソナライズ広告</td><td>GDPR 第6条第1項(f)：本ゲームの運営資金を確保する正当な利益</td></tr>
+</table>
+<h2>4. 情報の提供先</h2>
+<ul>
+  <li>Google LLC（AdMob、Google Play、STUN）</li>
+  <li>Apple Inc.（App Store）</li>
+  <li>Cloudflare, Inc.（マッチングサーバー、STUN）</li>
+  <li>対局相手（表示名、アイコン、スタンプ、接続に必要なネットワーク情報）</li>
+</ul><p>法令に基づく場合を除き、上記以外の第三者に情報を開示することはありません。</p>
+<h2>5. 保存期間</h2>
+<ul>
+  <li>端末内の情報：お客様が削除するか、本ゲームをアンインストールするまで</li>
+  <li>マッチング情報：ルーム作成から10分</li>
+  <li>広告および購入に関する情報：Google または Apple のポリシーに従います</li>
+</ul>
+<h2>6. 外国への移転</h2>
+<p>Google、Apple および Cloudflare は世界各地で事業を行っており、情報がお住まいの国以外で処理されることがあります。これらの事業者は、EU 標準契約条項などの適切な保護措置に基づいて移転を行います。</p>
+<h2>7. 安全管理</h2>
+<p>本ゲームが送信する情報は、通信時に暗号化されます。完全に安全な送信・保存方法は存在しませんが、当方は情報を保護するために合理的な措置を講じます。</p>
+<h2>8. お客様の権利と選択</h2>
+<ul>
+  <li>端末内の情報は、本ゲームをアンインストールすることで削除できます。</li>
+  <li>欧州経済領域、英国またはスイスにお住まいの方は、アクセス、訂正、消去、処理の制限、異議申立ておよびデータポータビリティの各権利、ならびに監督機関に苦情を申し立てる権利を有します。</li>
+  <li>広告に関する同意は、該当する場合、本ゲームの「設定 → プライバシー設定」からいつでも変更できます。</li>
+  <li>お住まいの地域の法令により、ターゲティング広告のための個人情報の利用を拒否する権利が認められている場合は、本ゲームのプライバシー設定（表示される場合）または端末の広告設定から行使できます。</li>
+  <li>広告 ID は、端末の設定からリセットまたは削除できます。</li>
+</ul><p>権利の行使については、下記の連絡先までご連絡ください。</p>
+<h2>9. お子様について</h2>
+<p>本ゲームは13歳未満のお子様を対象としておらず、当方が故意にお子様から個人情報を収集することはありません。お子様が個人情報を提供したとお考えの場合は、当方までご連絡ください。</p>
+<h2>10. 本ポリシーの変更</h2>
+<p>当方は本ポリシーを改定することがあります。改定時には上記の最終更新日を更新し、重要な変更については本ゲーム内でお知らせします。</p>
+<h2>11. お問い合わせ</h2>
+<p>本ポリシーに関するお問い合わせは、<a href="mailto:firecat870808@gmail.com">firecat870808@gmail.com</a> までご連絡ください。</p>
+</article>
+<article class="doc" id="doc-ko" lang="ko" data-title="개인정보 처리방침｜먹따먹기" hidden>
+<header>
+  <h1>개인정보 처리방침<small>먹따먹기（《落墨成勢》）</small></h1>
+  <p class="meta">최종 업데이트: 2026년 9월 28일　·　버전 1.2</p>
+</header>
+<p>본 개인정보 처리방침은 FireCat Studio(이하 “당사”)가 모바일 게임 「먹따먹기」(이하 “본 게임”)의 Android 및 iOS 버전에서 정보를 처리하는 방식을 설명합니다.</p>
+<p class="note">본 방침은 여러 언어로 제공됩니다. 언어별 버전 간에 차이가 있는 경우 영어 버전이 우선합니다.</p>
+<div class="summary">
+  <h3>요약</h3>
+<ul>
+  <li>본 게임에는 계정 기능이 없으며, 당사는 플레이어 프로필을 생성하지 않습니다.</li>
+  <li>대국 기록, 설정 및 컬렉션 진행 상황은 사용자의 기기에만 저장됩니다.</li>
+  <li>온라인 대국 시 연결에 필요한 제한된 정보가 당사의 매칭 서버를 거치며, 10분 이내에 자동으로 삭제됩니다.</li>
+  <li>본 게임은 Google AdMob이 제공하는 광고를 표시합니다.</li>
+  <li>‘광고 제거’ 결제는 Google Play 또는 App Store에서 처리되며, 당사는 결제 정보를 받지 않습니다.</li>
+</ul>
+  <p class="note" style="margin-bottom:0">이 요약은 참고용이며, 아래 본문이 우선합니다.</p>
+</div>
+<h2>1. 개인정보 처리 책임자</h2>
+<p>본 방침에 따른 정보 처리의 책임자는 개인 개발자인 FireCat Studio입니다. 연락처: <a href="mailto:firecat870808@gmail.com">firecat870808@gmail.com</a></p>
+<h2>2. 처리하는 정보</h2>
+<h3>2.1　기기에 저장되는 정보</h3><p>다음 정보는 사용자의 기기에만 저장되며 당사로 전송되지 않습니다.</p><ul>
+  <li>대국 기록 및 통계</li>
+  <li>표시 이름, 언어, 사운드 등 설정</li>
+  <li>컬렉션 진행 상황 및 선택한 아바타와 배경</li>
+  <li>‘광고 제거’ 구매 상태(기기 내 기록이며, 스토어 기록이 우선합니다)</li>
+  <li>사진 보관함에 저장하기로 선택한 이미지</li>
+</ul><p>본 게임을 삭제하면 이 정보도 함께 삭제됩니다. 단, 이미 사진 보관함에 저장된 이미지는 제외됩니다.</p><h3>2.2　온라인 대국</h3><p>이 항목은 온라인 대국 기능을 이용하는 경우에만 적용됩니다.</p><p><strong>(가) 상대방에게 표시되는 정보.</strong> 표시 이름, 선택한 아바타 및 대국 중 보낸 스티커는 상대방 화면에 표시됩니다. 아바타와 스티커는 모두 본 게임에 내장된 이미지입니다. 표시 이름으로 실명을 사용하지 않을 것을 권장합니다.</p><p><strong>(나) 매칭 서버.</strong> 두 기기를 연결하기 위해 방 코드, 연결에 필요한 네트워크 정보(IP 주소 포함), 표시 이름 및 아바타가 당사가 Cloudflare 인프라에서 운영하는 매칭 서버에 일시적으로 저장됩니다. 이 정보는 방 생성 후 10분이 지나면 자동으로 삭제되며 다른 목적으로 사용되지 않습니다. 연결된 후에는 대국 데이터가 두 기기 간에 직접 전송됩니다.</p><p><strong>(다) 연결 서비스.</strong> 연결 주소를 확인하기 위해 본 게임은 Cloudflare 및 Google이 제공하는 STUN 서비스를 사용하며, 해당 서비스는 사용자의 IP 주소를 수신합니다.</p><h3>2.3　광고</h3><p>본 게임은 Google AdMob을 통해 광고를 표시합니다. Google은 광고 제공, 맞춤화 및 성과 측정을 위해 기기의 광고 ID, IP 주소, 기기 정보 및 광고 상호작용 데이터를 수집·이용할 수 있습니다. 자세한 내용은 <a href="https://policies.google.com/technologies/partner-sites?hl=ko" target="_blank" rel="noopener">「Google 서비스를 사용하는 사이트 또는 앱의 정보를 Google이 사용하는 방법」</a>을 참조하십시오. 광고는 게임 진행이나 대국 결과에 영향을 주지 않습니다.</p><h3>2.4　인앱 구매</h3><p>본 게임은 1회성 구매 항목 ‘광고 제거’를 제공합니다. 결제는 Google Play 또는 Apple App Store에서 처리되며, 당사는 사용자의 이름이나 결제 정보를 받지 않고 스토어 계정이 해당 항목을 보유하고 있는지에 대한 확인만 받습니다. 구매는 ‘설정 → 구매 복원’에서 복원할 수 있습니다. 구매가 환불되면 그 효과는 취소됩니다. 환불 및 결제 분쟁은 각 스토어의 약관에 따라 처리됩니다.</p><h3>2.5　수집하지 않는 정보</h3><p>당사는 이름, 이메일 주소, 전화번호, 연락처 또는 정확한 위치 정보를 수집하지 않습니다. 제2.3항의 광고에 필요한 경우를 제외하고 분석 또는 추적 도구를 사용하지 않습니다. 당사는 개인정보를 판매하지 않습니다.</p>
+<h2>3. 법적 근거(유럽경제지역, 영국 및 스위스)</h2>
+<table>
+  <tr><th>처리 활동</th><th>법적 근거</th></tr>
+  <tr><td>온라인 대국</td><td>GDPR 제6조 제1항 (b): 계약의 이행</td></tr>
+  <tr><td>인앱 구매</td><td>GDPR 제6조 제1항 (b): 계약의 이행</td></tr>
+  <tr><td>맞춤형 광고</td><td>GDPR 제6조 제1항 (a): 동의(Google 동의 관리 도구를 통해 취득)</td></tr>
+  <tr><td>비맞춤형 광고</td><td>GDPR 제6조 제1항 (f): 본 게임 운영 재원 확보를 위한 정당한 이익</td></tr>
+</table>
+<h2>4. 정보를 제공받는 자</h2>
+<ul>
+  <li>Google LLC(AdMob, Google Play, STUN)</li>
+  <li>Apple Inc.(App Store)</li>
+  <li>Cloudflare, Inc.(매칭 서버, STUN)</li>
+  <li>상대방(표시 이름, 아바타, 스티커 및 연결에 필요한 네트워크 정보)</li>
+</ul><p>법령에 따른 경우를 제외하고, 위 외의 제3자에게 정보를 제공하지 않습니다.</p>
+<h2>5. 보유 기간</h2>
+<ul>
+  <li>기기 내 정보: 사용자가 삭제하거나 본 게임을 삭제할 때까지</li>
+  <li>매칭 정보: 방 생성 후 10분</li>
+  <li>광고 및 구매 관련 정보: Google 또는 Apple의 정책에 따름</li>
+</ul>
+<h2>6. 국외 이전</h2>
+<p>Google, Apple 및 Cloudflare는 전 세계에서 운영되므로 정보가 거주 국가 외의 지역에서 처리될 수 있습니다. 이들 사업자는 EU 표준계약조항 등 적절한 보호 조치에 따라 이전합니다.</p>
+<h2>7. 안전성 확보 조치</h2>
+<p>본 게임이 전송하는 정보는 전송 중 암호화됩니다. 완전히 안전한 전송·저장 방법은 존재하지 않으나, 당사는 정보를 보호하기 위해 합리적인 조치를 취합니다.</p>
+<h2>8. 이용자의 권리와 선택</h2>
+<ul>
+  <li>기기에 저장된 정보는 본 게임을 삭제하여 지울 수 있습니다.</li>
+  <li>유럽경제지역, 영국 또는 스위스에 거주하는 경우 열람, 정정, 삭제, 처리 제한, 처리 반대 및 데이터 이동의 권리와 감독기관에 민원을 제기할 권리가 있습니다.</li>
+  <li>광고 동의는 해당하는 경우 본 게임의 ‘설정 → 개인정보 옵션’에서 언제든지 변경할 수 있습니다.</li>
+  <li>거주 지역의 법률이 맞춤형 광고를 위한 개인정보 이용을 거부할 권리를 인정하는 경우, 본 게임의 개인정보 옵션(표시되는 경우) 또는 기기의 광고 설정에서 이를 행사할 수 있습니다.</li>
+  <li>광고 ID는 기기 설정에서 재설정하거나 삭제할 수 있습니다.</li>
+</ul><p>권리 행사는 아래 연락처로 문의하여 주십시오.</p>
+<h2>9. 아동</h2>
+<p>본 게임은 13세 미만 아동을 대상으로 하지 않으며, 당사는 아동의 개인정보를 고의로 수집하지 않습니다. 아동이 개인정보를 제공했다고 판단되는 경우 당사로 연락하여 주십시오.</p>
+<h2>10. 방침의 변경</h2>
+<p>당사는 본 방침을 변경할 수 있습니다. 변경 시 상단의 최종 업데이트 날짜를 수정하며, 중요한 변경 사항은 본 게임 내에서 안내합니다.</p>
+<h2>11. 문의처</h2>
+<p>본 방침에 관한 문의는 <a href="mailto:firecat870808@gmail.com">firecat870808@gmail.com</a>로 연락하여 주십시오.</p>
+</article>
+<article class="doc" id="doc-de" lang="de" data-title="Datenschutzerklärung | Tintenreich" hidden>
+<header>
+  <h1>Datenschutzerklärung<small>Tintenreich（《落墨成勢》）</small></h1>
+  <p class="meta">Zuletzt aktualisiert: 28. September 2026　·　Version 1.2</p>
+</header>
+<p>Diese Datenschutzerklärung beschreibt, wie FireCat Studio („wir“, „uns“) im Zusammenhang mit dem Mobilspiel „Tintenreich“ (das „Spiel“) für Android und iOS mit Informationen umgeht.</p>
+<p class="note">Diese Datenschutzerklärung wird in mehreren Sprachen bereitgestellt. Bei Abweichungen zwischen den Sprachfassungen ist die englische Fassung maßgeblich.</p>
+<div class="summary">
+  <h3>Zusammenfassung</h3>
+<ul>
+  <li>Das Spiel verfügt über keine Benutzerkonten; wir erstellen keine Spielerprofile.</li>
+  <li>Spielverläufe, Einstellungen und Sammelfortschritt werden ausschließlich auf Ihrem Gerät gespeichert.</li>
+  <li>Bei Online-Partien werden begrenzte Verbindungsinformationen über unseren Vermittlungsserver übertragen und innerhalb von zehn Minuten automatisch gelöscht.</li>
+  <li>Das Spiel zeigt Werbung von Google AdMob an.</li>
+  <li>Zahlungen für „Werbung entfernen“ werden über Google Play oder den App Store abgewickelt; wir erhalten keine Zahlungsdaten.</li>
+</ul>
+  <p class="note" style="margin-bottom:0">Diese Zusammenfassung dient nur der Übersicht; maßgeblich ist der nachstehende vollständige Text.</p>
+</div>
+<h2>1. Verantwortlicher</h2>
+<p>Verantwortlich für die in dieser Erklärung beschriebene Verarbeitung ist FireCat Studio, ein Einzelentwickler. Kontakt: <a href="mailto:firecat870808@gmail.com">firecat870808@gmail.com</a></p>
+<h2>2. Welche Informationen wir verarbeiten</h2>
+<h3>2.1　Auf Ihrem Gerät gespeicherte Informationen</h3><p>Die folgenden Informationen werden ausschließlich lokal auf Ihrem Gerät gespeichert und nicht an uns übermittelt:</p><ul>
+  <li>Spielverläufe und Statistiken;</li>
+  <li>Einstellungen, einschließlich Anzeigename, Sprache und Toneinstellungen;</li>
+  <li>Sammelfortschritt sowie der von Ihnen gewählte Avatar und Hintergrund;</li>
+  <li>ob „Werbung entfernen“ gekauft wurde (lokale Aufzeichnung; maßgeblich ist der Datensatz des Stores);</li>
+  <li>Bilder, die Sie in Ihrer Fotomediathek speichern.</li>
+</ul><p>Diese Informationen werden bei der Deinstallation des Spiels gelöscht; bereits in Ihrer Fotomediathek gespeicherte Bilder sind davon ausgenommen.</p><h3>2.2　Online-Partien</h3><p>Dieser Abschnitt gilt nur, wenn Sie den Online-Mehrspielermodus nutzen.</p><p><strong>(a) Für Ihren Gegner sichtbare Informationen.</strong> Ihr Anzeigename, der von Ihnen gewählte Avatar und die Sticker, die Sie während einer Partie senden, werden Ihrem Gegner angezeigt. Avatare und Sticker sind im Spiel enthaltene Bilder. Wir empfehlen, nicht Ihren echten Namen als Anzeigenamen zu verwenden.</p><p><strong>(b) Vermittlungsserver.</strong> Um zwei Geräte zu verbinden, werden der Raumcode, die für den Verbindungsaufbau erforderlichen Netzwerkinformationen (einschließlich IP-Adressen) sowie Ihr Anzeigename und Avatar vorübergehend auf unserem Vermittlungsserver gespeichert, den wir auf der Infrastruktur von Cloudflare betreiben. Diese Informationen werden zehn Minuten nach Erstellung des Raums automatisch gelöscht und für keine anderen Zwecke verwendet. Nach dem Verbindungsaufbau werden die Spieldaten direkt zwischen den beiden Geräten ausgetauscht.</p><p><strong>(c) Verbindungsdienste.</strong> Zur Ermittlung der Verbindungsadressen nutzt das Spiel STUN-Dienste von Cloudflare und Google, die dabei Ihre IP-Adresse erhalten.</p><h3>2.3　Werbung</h3><p>Das Spiel zeigt Werbung über Google AdMob an. Google kann die Werbe-ID Ihres Geräts, Ihre IP-Adresse, Geräteinformationen und Daten zur Interaktion mit Anzeigen erheben und verwenden, um Werbung bereitzustellen, zu personalisieren und zu messen. Einzelheiten finden Sie unter <a href="https://policies.google.com/technologies/partner-sites?hl=de" target="_blank" rel="noopener">„Wie Google Informationen von Websites oder Apps verwendet, die unsere Dienste nutzen“</a>. Werbung hat keinen Einfluss auf das Spielgeschehen oder den Ausgang von Partien.</p><h3>2.4　In-App-Kauf</h3><p>Das Spiel bietet den einmaligen Kauf „Werbung entfernen“ an. Die Zahlung wird von Google Play bzw. dem Apple App Store abgewickelt; wir erhalten weder Ihren Namen noch Ihre Zahlungsdaten, sondern lediglich die Bestätigung, ob Ihr Store-Konto den Artikel besitzt. Sie können den Kauf unter „Einstellungen → Käufe wiederherstellen“ wiederherstellen. Wird ein Kauf erstattet, entfällt seine Wirkung. Erstattungen und Zahlungsstreitigkeiten werden vom jeweiligen Store nach dessen Bedingungen abgewickelt.</p><h3>2.5　Informationen, die wir nicht erheben</h3><p>Wir erheben weder Ihren Namen noch Ihre E-Mail-Adresse, Telefonnummer, Kontakte oder Ihren genauen Standort. Abgesehen von den für die Werbung nach Abschnitt 2.3 erforderlichen Werkzeugen verwenden wir keine Analyse- oder Tracking-Werkzeuge. Wir verkaufen keine personenbezogenen Daten.</p>
+<h2>3. Rechtsgrundlagen (EWR, Vereinigtes Königreich und Schweiz)</h2>
+<table>
+  <tr><th>Verarbeitung</th><th>Rechtsgrundlage</th></tr>
+  <tr><td>Online-Partien</td><td>Art. 6 Abs. 1 lit. b DSGVO – Vertragserfüllung</td></tr>
+  <tr><td>In-App-Kauf</td><td>Art. 6 Abs. 1 lit. b DSGVO – Vertragserfüllung</td></tr>
+  <tr><td>Personalisierte Werbung</td><td>Art. 6 Abs. 1 lit. a DSGVO – Einwilligung, eingeholt über das Einwilligungstool von Google</td></tr>
+  <tr><td>Nicht personalisierte Werbung</td><td>Art. 6 Abs. 1 lit. f DSGVO – berechtigtes Interesse an der Finanzierung des Spiels</td></tr>
+</table>
+<h2>4. Empfänger</h2>
+<ul>
+  <li>Google LLC (AdMob, Google Play, STUN)</li>
+  <li>Apple Inc. (App Store)</li>
+  <li>Cloudflare, Inc. (Vermittlungsserver, STUN)</li>
+  <li>Ihr Gegner (Anzeigename, Avatar, Sticker und die für die Verbindung erforderlichen Netzwerkinformationen)</li>
+</ul><p>Darüber hinaus geben wir Informationen nur weiter, wenn wir gesetzlich dazu verpflichtet sind.</p>
+<h2>5. Speicherdauer</h2>
+<ul>
+  <li>Informationen auf Ihrem Gerät: bis Sie sie löschen oder das Spiel deinstallieren.</li>
+  <li>Vermittlungsinformationen: zehn Minuten nach Erstellung des Raums.</li>
+  <li>Werbe- und Kaufinformationen: gemäß den Richtlinien von Google bzw. Apple.</li>
+</ul>
+<h2>6. Internationale Datenübermittlungen</h2>
+<p>Google, Apple und Cloudflare sind weltweit tätig; Informationen können außerhalb Ihres Wohnsitzlandes verarbeitet werden. Diese Anbieter stützen sich auf geeignete Garantien wie die EU-Standardvertragsklauseln.</p>
+<h2>7. Sicherheit</h2>
+<p>Vom Spiel übertragene Informationen werden während der Übertragung verschlüsselt. Keine Übertragungs- oder Speichermethode ist vollkommen sicher; wir treffen jedoch angemessene Maßnahmen zum Schutz der Informationen.</p>
+<h2>8. Ihre Rechte und Wahlmöglichkeiten</h2>
+<ul>
+  <li>Informationen auf Ihrem Gerät können Sie durch Deinstallation des Spiels löschen.</li>
+  <li>Wenn Sie sich im EWR, im Vereinigten Königreich oder in der Schweiz aufhalten, haben Sie das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Widerspruch und Datenübertragbarkeit sowie das Recht, Beschwerde bei einer Aufsichtsbehörde einzulegen.</li>
+  <li>Sofern zutreffend, können Sie Ihre Einwilligung zur Werbung jederzeit im Spiel unter „Einstellungen → Datenschutz“ ändern.</li>
+  <li>Sofern Ihnen das Recht Ihres Wohnorts ein Recht einräumt, der Nutzung personenbezogener Daten für zielgerichtete Werbung zu widersprechen, können Sie dieses über die Datenschutzoptionen des Spiels (sofern angezeigt) oder die Werbeeinstellungen Ihres Geräts ausüben.</li>
+  <li>Die Werbe-ID können Sie in den Einstellungen Ihres Geräts zurücksetzen oder löschen.</li>
+</ul><p>Zur Ausübung Ihrer Rechte wenden Sie sich bitte an die unten genannte Kontaktadresse.</p>
+<h2>9. Kinder</h2>
+<p>Das Spiel richtet sich nicht an Kinder unter 13 Jahren, und wir erheben wissentlich keine personenbezogenen Daten von ihnen. Wenn Sie der Ansicht sind, dass uns ein Kind personenbezogene Daten übermittelt hat, wenden Sie sich bitte an uns.</p>
+<h2>10. Änderungen dieser Erklärung</h2>
+<p>Wir können diese Datenschutzerklärung aktualisieren. In diesem Fall wird das oben angegebene Datum der letzten Aktualisierung angepasst; wesentliche Änderungen werden im Spiel mitgeteilt.</p>
+<h2>11. Kontakt</h2>
+<p>Bei Fragen zu dieser Datenschutzerklärung wenden Sie sich bitte an <a href="mailto:firecat870808@gmail.com">firecat870808@gmail.com</a>.</p>
+</article>
+<article class="doc" id="doc-fr" lang="fr" data-title="Politique de confidentialité | L&#x27;Encrage" hidden>
+<header>
+  <h1>Politique de confidentialité<small>L’Encrage（《落墨成勢》）</small></h1>
+  <p class="meta">Dernière mise à jour : 28 septembre 2026　·　Version 1.2</p>
+</header>
+<p>La présente politique de confidentialité décrit la manière dont FireCat Studio (« nous ») traite les informations dans le cadre du jeu mobile « L’Encrage » (le « Jeu ») sur Android et iOS.</p>
+<p class="note">La présente politique est disponible en plusieurs langues. En cas de divergence entre les versions linguistiques, la version anglaise prévaut.</p>
+<div class="summary">
+  <h3>Résumé</h3>
+<ul>
+  <li>Le Jeu ne comporte aucun compte utilisateur et nous ne créons aucun profil de joueur.</li>
+  <li>L’historique des parties, les réglages et la progression de la collection sont stockés uniquement sur votre appareil.</li>
+  <li>Lors des parties en ligne, des informations de connexion limitées transitent par notre serveur de mise en relation et sont supprimées automatiquement dans un délai de dix minutes.</li>
+  <li>Le Jeu affiche des publicités fournies par Google AdMob.</li>
+  <li>Les paiements de « Supprimer les pubs » sont traités par Google Play ou l’App Store ; nous ne recevons pas vos données de paiement.</li>
+</ul>
+  <p class="note" style="margin-bottom:0">Ce résumé est fourni à titre indicatif ; seul le texte complet ci-dessous fait foi.</p>
+</div>
+<h2>1. Responsable du traitement</h2>
+<p>Le responsable des traitements décrits dans la présente politique est FireCat Studio, développeur indépendant. Contact : <a href="mailto:firecat870808@gmail.com">firecat870808@gmail.com</a></p>
+<h2>2. Informations que nous traitons</h2>
+<h3>2.1　Informations stockées sur votre appareil</h3><p>Les informations suivantes sont stockées localement sur votre appareil et ne nous sont pas transmises :</p><ul>
+  <li>l’historique et les statistiques des parties ;</li>
+  <li>les réglages, y compris votre nom d’affichage, la langue et les préférences sonores ;</li>
+  <li>la progression de la collection ainsi que l’avatar et le fond choisis ;</li>
+  <li>l’achat éventuel de « Supprimer les pubs » (enregistrement local ; l’enregistrement de la boutique fait foi) ;</li>
+  <li>les images que vous choisissez d’enregistrer dans votre photothèque.</li>
+</ul><p>Ces informations sont supprimées lors de la désinstallation du Jeu, à l’exception des images déjà enregistrées dans votre photothèque.</p><h3>2.2　Parties en ligne</h3><p>La présente section ne s’applique que lorsque vous utilisez le mode multijoueur en ligne.</p><p><strong>(a) Informations visibles par votre adversaire.</strong> Votre nom d’affichage, l’avatar choisi et les autocollants que vous envoyez pendant une partie sont affichés à votre adversaire. Les avatars et les autocollants sont des images intégrées au Jeu. Nous vous recommandons de ne pas utiliser votre vrai nom comme nom d’affichage.</p><p><strong>(b) Serveur de mise en relation.</strong> Afin de connecter deux appareils, le code du salon, les informations réseau nécessaires à l’établissement de la connexion (y compris les adresses IP), ainsi que votre nom d’affichage et votre avatar sont stockés temporairement sur notre serveur de mise en relation, que nous exploitons sur l’infrastructure de Cloudflare. Ces informations sont supprimées automatiquement dix minutes après la création du salon et ne sont utilisées à aucune autre fin. Une fois la connexion établie, les données de la partie sont échangées directement entre les deux appareils.</p><p><strong>(c) Services de connexion.</strong> Pour déterminer les adresses de connexion, le Jeu utilise des services STUN fournis par Cloudflare et Google, qui reçoivent votre adresse IP.</p><h3>2.3　Publicité</h3><p>Le Jeu affiche des publicités par l’intermédiaire de Google AdMob. Google peut collecter et utiliser l’identifiant publicitaire de votre appareil, votre adresse IP, des informations sur l’appareil et des données d’interaction avec les publicités afin de diffuser, de personnaliser et de mesurer la publicité. Pour en savoir plus, consultez <a href="https://policies.google.com/technologies/partner-sites?hl=fr" target="_blank" rel="noopener">« Comment Google utilise les informations des sites ou applications qui utilisent ses services »</a>. La publicité n’a aucune incidence sur le déroulement du jeu ni sur l’issue des parties.</p><h3>2.4　Achat intégré</h3><p>Le Jeu propose un achat unique, « Supprimer les pubs ». Le paiement est traité par Google Play ou l’Apple App Store ; nous ne recevons ni votre nom ni vos données de paiement, mais uniquement la confirmation que votre compte de boutique possède l’article. Vous pouvez restaurer l’achat via « Réglages → Restaurer les achats ». Si un achat est remboursé, son effet est annulé. Les remboursements et les litiges de paiement sont traités par la boutique concernée selon ses propres conditions.</p><h3>2.5　Informations que nous ne collectons pas</h3><p>Nous ne collectons ni votre nom, ni votre adresse e-mail, ni votre numéro de téléphone, ni vos contacts, ni votre position précise. Nous n’utilisons aucun outil d’analyse ou de suivi autre que ceux requis pour la publicité décrite à la section 2.3. Nous ne vendons pas de données personnelles.</p>
+<h2>3. Bases juridiques (EEE, Royaume-Uni et Suisse)</h2>
+<table>
+  <tr><th>Traitement</th><th>Base juridique</th></tr>
+  <tr><td>Parties en ligne</td><td>Art. 6, par. 1, point b) du RGPD – exécution d’un contrat</td></tr>
+  <tr><td>Achat intégré</td><td>Art. 6, par. 1, point b) du RGPD – exécution d’un contrat</td></tr>
+  <tr><td>Publicité personnalisée</td><td>Art. 6, par. 1, point a) du RGPD – consentement recueilli via l’outil de consentement de Google</td></tr>
+  <tr><td>Publicité non personnalisée</td><td>Art. 6, par. 1, point f) du RGPD – intérêt légitime à financer le Jeu</td></tr>
+</table>
+<h2>4. Destinataires</h2>
+<ul>
+  <li>Google LLC (AdMob, Google Play, STUN)</li>
+  <li>Apple Inc. (App Store)</li>
+  <li>Cloudflare, Inc. (serveur de mise en relation, STUN)</li>
+  <li>Votre adversaire (nom d’affichage, avatar, autocollants et informations réseau nécessaires à la connexion)</li>
+</ul><p>Nous ne communiquons aucune information à d’autres tiers, sauf obligation légale.</p>
+<h2>5. Durée de conservation</h2>
+<ul>
+  <li>Informations sur votre appareil : jusqu’à leur suppression ou la désinstallation du Jeu.</li>
+  <li>Informations de mise en relation : dix minutes après la création du salon.</li>
+  <li>Informations publicitaires et d’achat : conformément aux politiques de Google ou d’Apple.</li>
+</ul>
+<h2>6. Transferts internationaux</h2>
+<p>Google, Apple et Cloudflare exercent leurs activités dans le monde entier ; les informations peuvent être traitées en dehors de votre pays de résidence. Ces prestataires s’appuient sur des garanties appropriées, telles que les clauses contractuelles types de l’UE.</p>
+<h2>7. Sécurité</h2>
+<p>Les informations transmises par le Jeu sont chiffrées pendant leur transit. Aucune méthode de transmission ou de stockage n’est totalement sûre, mais nous prenons des mesures raisonnables pour protéger les informations.</p>
+<h2>8. Vos droits et vos choix</h2>
+<ul>
+  <li>Vous pouvez supprimer les informations stockées sur votre appareil en désinstallant le Jeu.</li>
+  <li>Si vous vous trouvez dans l’EEE, au Royaume-Uni ou en Suisse, vous disposez des droits d’accès, de rectification, d’effacement, de limitation du traitement, d’opposition et de portabilité, ainsi que du droit d’introduire une réclamation auprès d’une autorité de contrôle.</li>
+  <li>Le cas échéant, vous pouvez modifier à tout moment votre consentement publicitaire dans le Jeu, via « Réglages → Confidentialité ».</li>
+  <li>Si la loi de votre lieu de résidence vous donne le droit de vous opposer à l’utilisation de vos données personnelles à des fins de publicité ciblée, vous pouvez l’exercer via les options de confidentialité du Jeu (si elles sont affichées) ou les paramètres publicitaires de votre appareil.</li>
+  <li>Vous pouvez réinitialiser ou supprimer l’identifiant publicitaire dans les paramètres de votre appareil.</li>
+</ul><p>Pour exercer vos droits, veuillez nous contacter à l’adresse indiquée ci-dessous.</p>
+<h2>9. Enfants</h2>
+<p>Le Jeu ne s’adresse pas aux enfants de moins de 13 ans et nous ne collectons pas sciemment de données personnelles les concernant. Si vous pensez qu’un enfant nous a fourni des données personnelles, veuillez nous contacter.</p>
+<h2>10. Modifications de la présente politique</h2>
+<p>Nous pouvons mettre à jour la présente politique. La date de dernière mise à jour indiquée ci-dessus sera alors modifiée, et toute modification importante sera signalée dans le Jeu.</p>
+<h2>11. Contact</h2>
+<p>Pour toute question relative à la présente politique, veuillez écrire à <a href="mailto:firecat870808@gmail.com">firecat870808@gmail.com</a>.</p>
+</article>
+<article class="doc" id="doc-es" lang="es" data-title="Política de privacidad | La Mancha" hidden>
+<header>
+  <h1>Política de privacidad<small>La Mancha（《落墨成勢》）</small></h1>
+  <p class="meta">Última actualización: 28 de septiembre de 2026　·　Versión 1.2</p>
+</header>
+<p>Esta Política de privacidad explica cómo FireCat Studio («nosotros») trata la información en relación con el juego para móviles «La Mancha» (el «Juego») en Android e iOS.</p>
+<p class="note">Esta política se ofrece en varios idiomas. En caso de discrepancia entre las versiones, prevalecerá la versión en inglés.</p>
+<div class="summary">
+  <h3>Resumen</h3>
+<ul>
+  <li>El Juego no tiene cuentas de usuario y no creamos perfiles de jugadores.</li>
+  <li>El historial de partidas, los ajustes y el progreso de la colección se almacenan únicamente en su dispositivo.</li>
+  <li>En las partidas en línea, una cantidad limitada de información de conexión pasa por nuestro servidor de emparejamiento y se elimina automáticamente en un plazo de diez minutos.</li>
+  <li>El Juego muestra publicidad proporcionada por Google AdMob.</li>
+  <li>Los pagos de «Quitar anuncios» los procesa Google Play o la App Store; no recibimos sus datos de pago.</li>
+</ul>
+  <p class="note" style="margin-bottom:0">Este resumen se ofrece solo como orientación; prevalece el texto completo que figura a continuación.</p>
+</div>
+<h2>1. Responsable del tratamiento</h2>
+<p>El responsable de los tratamientos descritos en esta política es FireCat Studio, desarrollador independiente. Contacto: <a href="mailto:firecat870808@gmail.com">firecat870808@gmail.com</a></p>
+<h2>2. Información que tratamos</h2>
+<h3>2.1　Información almacenada en su dispositivo</h3><p>La siguiente información se almacena localmente en su dispositivo y no se nos transmite:</p><ul>
+  <li>el historial y las estadísticas de las partidas;</li>
+  <li>los ajustes, incluidos el nombre visible, el idioma y las preferencias de sonido;</li>
+  <li>el progreso de la colección y el avatar y el fondo elegidos;</li>
+  <li>si se ha comprado «Quitar anuncios» (registro local; prevalece el registro de la tienda);</li>
+  <li>las imágenes que decida guardar en su fototeca.</li>
+</ul><p>Esta información se elimina al desinstalar el Juego, salvo las imágenes ya guardadas en su fototeca.</p><h3>2.2　Partidas en línea</h3><p>Este apartado solo se aplica cuando utiliza el modo multijugador en línea.</p><p><strong>(a) Información visible para su rival.</strong> Su nombre visible, el avatar elegido y las pegatinas que envíe durante una partida se muestran a su rival. Los avatares y las pegatinas son imágenes integradas en el Juego. Le recomendamos no utilizar su nombre real como nombre visible.</p><p><strong>(b) Servidor de emparejamiento.</strong> Para conectar dos dispositivos, el código de sala, la información de red necesaria para establecer la conexión (incluidas las direcciones IP), su nombre visible y su avatar se almacenan temporalmente en nuestro servidor de emparejamiento, que operamos sobre la infraestructura de Cloudflare. Esta información se elimina automáticamente diez minutos después de crear la sala y no se utiliza para ningún otro fin. Una vez establecida la conexión, los datos de la partida se intercambian directamente entre los dos dispositivos.</p><p><strong>(c) Servicios de conexión.</strong> Para determinar las direcciones de conexión, el Juego utiliza servicios STUN prestados por Cloudflare y Google, que reciben su dirección IP.</p><h3>2.3　Publicidad</h3><p>El Juego muestra publicidad a través de Google AdMob. Google puede recopilar y utilizar el identificador de publicidad de su dispositivo, su dirección IP, información del dispositivo y datos de interacción con los anuncios para ofrecer, personalizar y medir la publicidad. Para más información, consulte <a href="https://policies.google.com/technologies/partner-sites?hl=es" target="_blank" rel="noopener">«Cómo utiliza Google la información de los sitios web o aplicaciones que utilizan sus servicios»</a>. La publicidad no afecta al desarrollo del juego ni al resultado de las partidas.</p><h3>2.4　Compra integrada</h3><p>El Juego ofrece una compra única, «Quitar anuncios». El pago lo procesa Google Play o el Apple App Store; no recibimos su nombre ni sus datos de pago, sino únicamente la confirmación de si su cuenta de la tienda posee el artículo. Puede restaurar la compra en «Ajustes → Restaurar compras». Si una compra se reembolsa, su efecto se anulará. Los reembolsos y las disputas de pago los gestiona la tienda correspondiente conforme a sus propias condiciones.</p><h3>2.5　Información que no recopilamos</h3><p>No recopilamos su nombre, dirección de correo electrónico, número de teléfono, contactos ni ubicación precisa. No utilizamos herramientas de análisis ni de seguimiento, salvo las necesarias para la publicidad descrita en el apartado 2.3. No vendemos datos personales.</p>
+<h2>3. Bases jurídicas (EEE, Reino Unido y Suiza)</h2>
+<table>
+  <tr><th>Tratamiento</th><th>Base jurídica</th></tr>
+  <tr><td>Partidas en línea</td><td>Art. 6.1.b) del RGPD: ejecución de un contrato</td></tr>
+  <tr><td>Compra integrada</td><td>Art. 6.1.b) del RGPD: ejecución de un contrato</td></tr>
+  <tr><td>Publicidad personalizada</td><td>Art. 6.1.a) del RGPD: consentimiento obtenido mediante la herramienta de consentimiento de Google</td></tr>
+  <tr><td>Publicidad no personalizada</td><td>Art. 6.1.f) del RGPD: interés legítimo en financiar el Juego</td></tr>
+</table>
+<h2>4. Destinatarios</h2>
+<ul>
+  <li>Google LLC (AdMob, Google Play, STUN)</li>
+  <li>Apple Inc. (App Store)</li>
+  <li>Cloudflare, Inc. (servidor de emparejamiento, STUN)</li>
+  <li>Su rival (nombre visible, avatar, pegatinas e información de red necesaria para la conexión)</li>
+</ul><p>No comunicamos información a otros terceros, salvo obligación legal.</p>
+<h2>5. Plazo de conservación</h2>
+<ul>
+  <li>Información en su dispositivo: hasta que la elimine o desinstale el Juego.</li>
+  <li>Información de emparejamiento: diez minutos después de crear la sala.</li>
+  <li>Información publicitaria y de compras: según las políticas de Google o Apple.</li>
+</ul>
+<h2>6. Transferencias internacionales</h2>
+<p>Google, Apple y Cloudflare operan en todo el mundo, y la información puede tratarse fuera de su país de residencia. Estos proveedores se basan en garantías adecuadas, como las cláusulas contractuales tipo de la UE.</p>
+<h2>7. Seguridad</h2>
+<p>La información que transmite el Juego se cifra durante su transmisión. Ningún método de transmisión o almacenamiento es completamente seguro, pero adoptamos medidas razonables para proteger la información.</p>
+<h2>8. Sus derechos y opciones</h2>
+<ul>
+  <li>Puede eliminar la información almacenada en su dispositivo desinstalando el Juego.</li>
+  <li>Si se encuentra en el EEE, el Reino Unido o Suiza, tiene derecho de acceso, rectificación, supresión, limitación del tratamiento, oposición y portabilidad, así como a presentar una reclamación ante una autoridad de control.</li>
+  <li>Cuando proceda, puede modificar en cualquier momento su consentimiento publicitario en el Juego, en «Ajustes → Privacidad».</li>
+  <li>Si la ley de su lugar de residencia le reconoce el derecho a oponerse al uso de sus datos personales con fines de publicidad dirigida, puede ejercerlo mediante las opciones de privacidad del Juego (si se muestran) o la configuración de publicidad de su dispositivo.</li>
+  <li>Puede restablecer o eliminar el identificador de publicidad en la configuración de su dispositivo.</li>
+</ul><p>Para ejercer sus derechos, póngase en contacto con nosotros en la dirección indicada a continuación.</p>
+<h2>9. Menores</h2>
+<p>El Juego no está dirigido a menores de 13 años y no recopilamos a sabiendas datos personales de ellos. Si cree que un menor nos ha facilitado datos personales, póngase en contacto con nosotros.</p>
+<h2>10. Cambios en esta política</h2>
+<p>Podemos actualizar esta política. En tal caso, se modificará la fecha de última actualización indicada arriba y los cambios importantes se comunicarán en el Juego.</p>
+<h2>11. Contacto</h2>
+<p>Si tiene alguna pregunta sobre esta política, escriba a <a href="mailto:firecat870808@gmail.com">firecat870808@gmail.com</a>.</p>
+</article>
 
-<h2>8. Children</h2>
-<p>
-The game is not directed at children under the age of thirteen, and we do not knowingly collect
-personal data from them. If you are a parent or guardian and believe a child has provided us with
-personal data, please contact us and we will address it.
-</p>
-
-<h2>9. Changes to this policy</h2>
-<p>
-If this policy changes, the effective date and version number at the top of this page will be
-updated. Material changes will additionally be announced within the game.
-</p>
-
-<h2>10. Contact</h2>
-<p>
-For any question about this policy, write to
-<a href="mailto:carter870808@gmail.com">carter870808@gmail.com</a>.
-</p>
-
-<footer>
-  《落墨成勢》　Ink Builds Worlds　·　FireCat Studio<br>
-  本頁為 Google AdMob 與 Google Play 所指之隱私權政策網址。<br>
-  This page is the privacy policy URL referenced by Google AdMob and Google Play.
-</footer>
-
+<footer>FireCat Studio　·　<a href="mailto:firecat870808@gmail.com">firecat870808@gmail.com</a></footer>
 </main>
+<script>
+/* ?lang= 指定語系；沒指定或不認得就用英文。接受短碼（tw、cn…）與 BCP-47（zh-Hant、zh-Hans、ja…）。 */
+(function () {
+  var alias = { tw:"tw", "zh-tw":"tw", "zh-hant":"tw", "zh-hk":"tw", "zh-mo":"tw", hant:"tw", zh:"tw",
+                cn:"cn", "zh-cn":"cn", "zh-hans":"cn", "zh-sg":"cn", hans:"cn",
+                en:"en", ja:"ja", jp:"ja", ko:"ko", kr:"ko", de:"de", fr:"fr", es:"es" };
+  var q = "";
+  try { q = (new URLSearchParams(location.search).get("lang") || "").toLowerCase(); } catch (e) {}
+  var code = alias[q] || alias[q.split("-")[0]] || "en";
+  var docs = document.querySelectorAll("article.doc");
+  for (var i = 0; i < docs.length; i++) docs[i].hidden = docs[i].id !== "doc-" + code;
+  var cur = document.getElementById("doc-" + code);
+  document.documentElement.lang = cur.getAttribute("lang");
+  document.title = cur.getAttribute("data-title");
+  var links = document.querySelectorAll("nav.langs a");
+  for (var j = 0; j < links.length; j++) {
+    if (links[j].getAttribute("data-code") === code) links[j].setAttribute("aria-current", "page");
+    else links[j].removeAttribute("aria-current");
+  }
+})();
+</script>
 </body>
 </html>

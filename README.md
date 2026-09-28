@@ -29,7 +29,7 @@ policy as a static page.
 
 ## Contact
 
-Questions about this policy: <carter870808@gmail.com>
+Questions about this policy: <firecat870808@gmail.com>
 
 ## Maintenance
 
