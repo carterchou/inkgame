@@ -20,6 +20,7 @@ policy as a static page.
 | File | Description |
 | --- | --- |
 | `index.html` | The privacy policy (Traditional Chinese) |
+| `terms/index.html` | 服務條款（八語言），網址 <https://carterchou.github.io/inkgame/terms/>，填在 Play 管理中心的交易商聲明。原始內容在遊戲專案的 `Docs/privacy/terms.py` |
 | `version.json` | 版本更新提醒用：`latest` = 商店上最新的 versionCode（比它舊 → 設定頁出現「前往商店更新」），`min` = 強制更新門檻（比它舊 → 開遊戲就要求更新）。`min` 要等新版在商店上架後再調；改完 GitHub Pages 要幾分鐘才生效 |
 
 ## Where this page is referenced
